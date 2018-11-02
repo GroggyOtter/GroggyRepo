@@ -1,10 +1,10 @@
 ; List of every emoji as of 20181102
-; Organized by category and sub-category
+; ## = Main Category
+; # = Sub category
 ; 2 tabs separate codes from names
 
-Smileys & Emotion
-
-face-smiling
+##Smileys & Emotion
+#face-smiling
 U+1F600		grinning face
 U+1F603		grinning face with big eyes
 U+1F604		grinning face with smiling eyes
@@ -19,7 +19,7 @@ U+1F609		winking face
 U+1F60A		smiling face with smiling eyes
 U+1F607		smiling face with halo
 
-face-affection
+#face-affection
 U+1F970		smiling face with 3 hearts
 U+1F60D		smiling face with heart-eyes
 U+1F929		star-struck
@@ -29,7 +29,7 @@ U+263A		smiling face
 U+1F61A		kissing face with closed eyes
 U+1F619		kissing face with smiling eyes
 
-face-tongue
+#face-tongue
 U+1F60B		face savoring food
 U+1F61B		face with tongue
 U+1F61C		winking face with tongue
@@ -37,13 +37,13 @@ U+1F92A		zany face
 U+1F61D		squinting face with tongue
 U+1F911		money-mouth face
 
-face-hand
+#face-hand
 U+1F917		hugging face
 U+1F92D		face with hand over mouth
 U+1F92B		shushing face
 U+1F914		thinking face
 
-face-neutral-skeptical
+#face-neutral-skeptical
 U+1F910		zipper-mouth face
 U+1F928		face with raised eyebrow
 U+1F610		neutral face
@@ -55,14 +55,14 @@ U+1F644		face with rolling eyes
 U+1F62C		grimacing face
 U+1F925		lying face
 
-face-sleepy
+#face-sleepy
 U+1F60C		relieved face
 U+1F614		pensive face
 U+1F62A		sleepy face
 U+1F924		drooling face
 U+1F634		sleeping face
 
-face-unwell
+#face-unwell
 U+1F637		face with medical mask
 U+1F912		face with thermometer
 U+1F915		face with head-bandage
@@ -75,16 +75,16 @@ U+1F974		woozy face
 U+1F635		dizzy face
 U+1F92F		exploding head
 
-face-hat
+#face-hat
 U+1F920		cowboy hat face
 U+1F973		partying face
 
-face-glasses
+#face-glasses
 U+1F60E		smiling face with sunglasses
 U+1F913		nerd face
 U+1F9D0		face with monocle
 
-face-concerned
+#face-concerned
 U+1F615		confused face
 U+1F61F		worried face
 U+1F641		slightly frowning face
@@ -109,7 +109,7 @@ U+1F613		downcast face with sweat
 U+1F629		weary face
 U+1F62B		tired face
 
-face-negative
+#face-negative
 U+1F624		face with steam from nose
 U+1F621		pouting face
 U+1F620		angry face
@@ -119,7 +119,7 @@ U+1F47F		angry face with horns
 U+1F480		skull
 U+2620		skull and crossbones
 
-face-costume
+#face-costume
 U+1F4A9		pile of poo
 U+1F921		clown face
 U+1F479		ogre
@@ -129,7 +129,7 @@ U+1F47D		alien
 U+1F47E		alien monster
 U+1F916		robot face
 
-cat-face
+#cat-face
 U+1F63A		grinning cat face
 U+1F638		grinning cat face with smiling eyes
 U+1F639		cat face with tears of joy
@@ -140,12 +140,12 @@ U+1F640		weary cat face
 U+1F63F		crying cat face
 U+1F63E		pouting cat face
 
-monkey-face
+#monkey-face
 U+1F648		see-no-evil monkey
 U+1F649		hear-no-evil monkey
 U+1F64A		speak-no-evil monkey
 
-emotion
+#emotion
 U+1F48B		kiss mark
 U+1F48C		love letter
 U+1F498		heart with arrow
@@ -180,16 +180,15 @@ U+1F5EF		right anger bubble
 U+1F4AD		thought balloon
 U+1F4A4		zzz
 
-People & Body
-
-hand-fingers-open
+##People & Body
+#hand-fingers-open
 U+1F44B		waving hand
 U+1F91A		raised back of hand
 U+1F590		hand with fingers splayed
 U+270B		raised hand
 U+1F596		vulcan salute
 
-hand-fingers-partial
+#hand-fingers-partial
 U+1F44C		OK hand
 U+270C		victory hand
 U+1F91E		crossed fingers
@@ -197,7 +196,7 @@ U+1F91F		love-you gesture
 U+1F918		sign of the horns
 U+1F919		call me hand
 
-hand-single-finger
+#hand-single-finger
 U+1F448		backhand index pointing left
 U+1F449		backhand index pointing right
 U+1F446		backhand index pointing up
@@ -205,7 +204,7 @@ U+1F595		middle finger
 U+1F447		backhand index pointing down
 U+261D		index pointing up
 
-hand-fingers-closed
+#hand-fingers-closed
 U+1F44D		thumbs up
 U+1F44E		thumbs down
 U+270A		raised fist
@@ -213,7 +212,7 @@ U+1F44A		oncoming fist
 U+1F91B		left-facing fist
 U+1F91C		right-facing fist
 
-hands
+#hands
 U+1F44F		clapping hands
 U+1F64C		raising hands
 U+1F450		open hands
@@ -221,12 +220,12 @@ U+1F932		palms up together
 U+1F91D		handshake
 U+1F64F		folded hands
 
-hand-prop
+#hand-prop
 U+270D		writing hand
 U+1F485		nail polish
 U+1F933		selfie
 
-body-parts
+#body-parts
 U+1F4AA		flexed biceps
 U+1F9B5		leg
 U+1F9B6		foot
@@ -240,7 +239,7 @@ U+1F441		eye
 U+1F445		tongue
 U+1F444		mouth
 
-person
+#person
 U+1F476		baby
 U+1F9D2		child
 U+1F466		boy
@@ -264,7 +263,7 @@ U+1F9D3		older person
 U+1F474		old man
 U+1F475		old woman
 
-person-gesture
+#person-gesture
 U+1F64D		person frowning
 U+1F64D U+200D U+2642 U+FE0F		man frowning
 U+1F64D U+200D U+2640 U+FE0F		woman frowning
@@ -293,7 +292,7 @@ U+1F937		person shrugging
 U+1F937 U+200D U+2642 U+FE0F		man shrugging
 U+1F937 U+200D U+2640 U+FE0F		woman shrugging
 
-person-role
+#person-role
 U+1F468 U+200D U+2695 U+FE0F		man health worker
 U+1F469 U+200D U+2695 U+FE0F		woman health worker
 U+1F468 U+200D U+1F393		man student
@@ -350,7 +349,7 @@ U+1F470		bride with veil
 U+1F930		pregnant woman
 U+1F931		breast-feeding
 
-person-fantasy
+#person-fantasy
 U+1F47C		baby angel
 U+1F385		Santa Claus
 U+1F936		Mrs. Claus
@@ -382,7 +381,7 @@ U+1F9DF		zombie
 U+1F9DF U+200D U+2642 U+FE0F		man zombie
 U+1F9DF U+200D U+2640 U+FE0F		woman zombie
 
-person-activity
+#person-activity
 U+1F486		person getting massage
 U+1F486 U+200D U+2642 U+FE0F		man getting massage
 U+1F486 U+200D U+2640 U+FE0F		woman getting massage
@@ -408,7 +407,7 @@ U+1F9D7		person climbing
 U+1F9D7 U+200D U+2642 U+FE0F		man climbing
 U+1F9D7 U+200D U+2640 U+FE0F		woman climbing
 
-person-sport
+#person-sport
 U+1F93A		person fencing
 U+1F3C7		horse racing
 U+26F7		skier
@@ -453,14 +452,14 @@ U+1F939		person juggling
 U+1F939 U+200D U+2642 U+FE0F		man juggling
 U+1F939 U+200D U+2640 U+FE0F		woman juggling
 
-person-resting
+#person-resting
 U+1F9D8		person in lotus position
 U+1F9D8 U+200D U+2642 U+FE0F		man in lotus position
 U+1F9D8 U+200D U+2640 U+FE0F		woman in lotus position
 U+1F6C0		person taking bath
 U+1F6CC		person in bed
 
-family
+#family
 U+1F46D		women holding hands
 U+1F46B		woman and man holding hands
 U+1F46C		men holding hands
@@ -499,23 +498,21 @@ U+1F469 U+200D U+1F467		family: woman, girl
 U+1F469 U+200D U+1F467 U+200D U+1F466		family: woman, girl, boy
 U+1F469 U+200D U+1F467 U+200D U+1F467		family: woman, girl, girl
 
-person-symbol
+#person-symbol
 U+1F5E3		speaking head
 U+1F464		bust in silhouette
 U+1F465		busts in silhouette
 U+1F463		footprints
 
-Component
-
-hair-style
+##Component
+#hair-style
 U+1F9B0		red hair
 U+1F9B1		curly hair
 U+1F9B3		white hair
 U+1F9B2		bald
 
-Animals & Nature
-
-animal-mammal
+##Animals & Nature
+#animal-mammal
 U+1F435		monkey face
 U+1F412		monkey
 U+1F98D		gorilla
@@ -570,7 +567,7 @@ U+1F998		kangaroo
 U+1F9A1		badger
 U+1F43E		paw prints
 
-animal-bird
+#animal-bird
 U+1F983		turkey
 U+1F414		chicken
 U+1F413		rooster
@@ -587,10 +584,10 @@ U+1F989		owl
 U+1F99A		peacock
 U+1F99C		parrot
 
-animal-amphibian
+#animal-amphibian
 U+1F438		frog face
 
-animal-reptile
+#animal-reptile
 U+1F40A		crocodile
 U+1F422		turtle
 U+1F98E		lizard
@@ -600,7 +597,7 @@ U+1F409		dragon
 U+1F995		sauropod
 U+1F996		T-Rex
 
-animal-marine
+#animal-marine
 U+1F433		spouting whale
 U+1F40B		whale
 U+1F42C		dolphin
@@ -611,7 +608,7 @@ U+1F988		shark
 U+1F419		octopus
 U+1F41A		spiral shell
 
-animal-bug
+#animal-bug
 U+1F40C		snail
 U+1F98B		butterfly
 U+1F41B		bug
@@ -625,7 +622,7 @@ U+1F982		scorpion
 U+1F99F		mosquito
 U+1F9A0		microbe
 
-plant-flower
+#plant-flower
 U+1F490		bouquet
 U+1F338		cherry blossom
 U+1F4AE		white flower
@@ -637,7 +634,7 @@ U+1F33B		sunflower
 U+1F33C		blossom
 U+1F337		tulip
 
-plant-other
+#plant-other
 U+1F331		seedling
 U+1F332		evergreen tree
 U+1F333		deciduous tree
@@ -651,9 +648,8 @@ U+1F341		maple leaf
 U+1F342		fallen leaf
 U+1F343		leaf fluttering in wind
 
-Food & Drink
-
-food-fruit
+##Food & Drink
+#food-fruit
 U+1F347		grapes
 U+1F348		melon
 U+1F349		watermelon
@@ -672,7 +668,7 @@ U+1F95D		kiwi fruit
 U+1F345		tomato
 U+1F965		coconut
 
-food-vegetable
+#food-vegetable
 U+1F951		avocado
 U+1F346		eggplant
 U+1F954		potato
@@ -686,7 +682,7 @@ U+1F344		mushroom
 U+1F95C		peanuts
 U+1F330		chestnut
 
-food-prepared
+#food-prepared
 U+1F35E		bread
 U+1F950		croissant
 U+1F956		baguette bread
@@ -716,7 +712,7 @@ U+1F37F		popcorn
 U+1F9C2		salt
 U+1F96B		canned food
 
-food-asian
+#food-asian
 U+1F371		bento box
 U+1F358		rice cracker
 U+1F359		rice ball
@@ -735,13 +731,13 @@ U+1F95F		dumpling
 U+1F960		fortune cookie
 U+1F961		takeout box
 
-food-marine
+#food-marine
 U+1F980		crab
 U+1F99E		lobster
 U+1F990		shrimp
 U+1F991		squid
 
-food-sweet
+#food-sweet
 U+1F366		soft ice cream
 U+1F367		shaved ice
 U+1F368		ice cream
@@ -757,7 +753,7 @@ U+1F36D		lollipop
 U+1F36E		custard
 U+1F36F		honey pot
 
-drink
+#drink
 U+1F37C		baby bottle
 U+1F95B		glass of milk
 U+2615		hot beverage
@@ -773,7 +769,7 @@ U+1F942		clinking glasses
 U+1F943		tumbler glass
 U+1F964		cup with straw
 
-dishware
+#dishware
 U+1F962		chopsticks
 U+1F37D		fork and knife with plate
 U+1F374		fork and knife
@@ -781,9 +777,8 @@ U+1F944		spoon
 U+1F52A		kitchen knife
 U+1F3FA		amphora
 
-Travel & Places
-
-place-map
+##Travel & Places
+#place-map
 U+1F30D		globe showing Europe-Africa
 U+1F30E		globe showing Americas
 U+1F30F		globe showing Asia-Australia
@@ -792,7 +787,7 @@ U+1F5FA		world map
 U+1F5FE		map of Japan
 U+1F9ED		compass
 
-place-geographic
+#place-geographic
 U+1F3D4		snow-capped mountain
 U+26F0		mountain
 U+1F30B		volcano
@@ -803,7 +798,7 @@ U+1F3DC		desert
 U+1F3DD		desert island
 U+1F3DE		national park
 
-place-building
+#place-building
 U+1F3DF		stadium
 U+1F3DB		classical building
 U+1F3D7		building construction
@@ -829,14 +824,14 @@ U+1F492		wedding
 U+1F5FC		Tokyo tower
 U+1F5FD		Statue of Liberty
 
-place-religious
+#place-religious
 U+26EA		church
 U+1F54C		mosque
 U+1F54D		synagogue
 U+26E9		shinto shrine
 U+1F54B		kaaba
 
-place-other
+#place-other
 U+26F2		fountain
 U+26FA		tent
 U+1F301		foggy
@@ -855,7 +850,7 @@ U+1F3A2		roller coaster
 U+1F488		barber pole
 U+1F3AA		circus tent
 
-transport-ground
+#transport-ground
 U+1F682		locomotive
 U+1F683		railway car
 U+1F684		high-speed train
@@ -901,7 +896,7 @@ U+1F6A6		vertical traffic light
 U+1F6D1		stop sign
 U+1F6A7		construction
 
-transport-water
+#transport-water
 U+2693		anchor
 U+26F5		sailboat
 U+1F6F6		canoe
@@ -911,7 +906,7 @@ U+26F4		ferry
 U+1F6E5		motor boat
 U+1F6A2		ship
 
-transport-air
+#transport-air
 U+2708		airplane
 U+1F6E9		small airplane
 U+1F6EB		airplane departure
@@ -925,11 +920,11 @@ U+1F6F0		satellite
 U+1F680		rocket
 U+1F6F8		flying saucer
 
-hotel
+#hotel
 U+1F6CE		bellhop bell
 U+1F9F3		luggage
 
-time
+#time
 U+231B		hourglass done
 U+23F3		hourglass not done
 U+231A		watch
@@ -962,7 +957,7 @@ U+1F565		ten-thirty
 U+1F55A		eleven oâ€™clock
 U+1F566		eleven-thirty
 
-sky & weather
+#sky & weather
 U+1F311		new moon
 U+1F312		waxing crescent moon
 U+1F313		first quarter moon
@@ -1009,9 +1004,8 @@ U+1F525		fire
 U+1F4A7		droplet
 U+1F30A		water wave
 
-Activities
-
-event
+##Activities
+#event
 U+1F383		jack-o-lantern
 U+1F384		Christmas tree
 U+1F386		fireworks
@@ -1034,7 +1028,7 @@ U+1F397		reminder ribbon
 U+1F39F		admission tickets
 U+1F3AB		ticket
 
-award-medal
+#award-medal
 U+1F396		military medal
 U+1F3C6		trophy
 U+1F3C5		sports medal
@@ -1042,7 +1036,7 @@ U+1F947		1st place medal
 U+1F948		2nd place medal
 U+1F949		3rd place medal
 
-sport
+#sport
 U+26BD		soccer ball
 U+26BE		baseball
 U+1F94E		softball
@@ -1070,7 +1064,7 @@ U+1F3BF		skis
 U+1F6F7		sled
 U+1F94C		curling stone
 
-game
+#game
 U+1F3AF		direct hit
 U+1F3B1		pool 8 ball
 U+1F52E		crystal ball
@@ -1090,16 +1084,15 @@ U+1F0CF		joker
 U+1F004		mahjong red dragon
 U+1F3B4		flower playing cards
 
-arts & crafts
+#arts & crafts
 U+1F3AD		performing arts
 U+1F5BC		framed picture
 U+1F3A8		artist palette
 U+1F9F5		thread
 U+1F9F6		yarn
 
-Objects
-
-clothing
+##Objects
+#clothing
 U+1F453		glasses
 U+1F576		sunglasses
 U+1F97D		goggles
@@ -1138,7 +1131,7 @@ U+1F484		lipstick
 U+1F48D		ring
 U+1F48E		gem stone
 
-sound
+#sound
 U+1F507		muted speaker
 U+1F508		speaker low volume
 U+1F509		speaker medium volume
@@ -1149,7 +1142,7 @@ U+1F4EF		postal horn
 U+1F514		bell
 U+1F515		bell with slash
 
-music
+#music
 U+1F3BC		musical score
 U+1F3B5		musical note
 U+1F3B6		musical notes
@@ -1160,7 +1153,7 @@ U+1F3A4		microphone
 U+1F3A7		headphone
 U+1F4FB		radio
 
-musical-instrument
+#musical-instrument
 U+1F3B7		saxophone
 U+1F3B8		guitar
 U+1F3B9		musical keyboard
@@ -1168,7 +1161,7 @@ U+1F3BA		trumpet
 U+1F3BB		violin
 U+1F941		drum
 
-phone
+#phone
 U+1F4F1		mobile phone
 U+1F4F2		mobile phone with arrow
 U+260E		telephone
@@ -1176,7 +1169,7 @@ U+1F4DE		telephone receiver
 U+1F4DF		pager
 U+1F4E0		fax machine
 
-computer
+#computer
 U+1F50B		battery
 U+1F50C		electric plug
 U+1F4BB		laptop computer
@@ -1191,7 +1184,7 @@ U+1F4BF		optical disk
 U+1F4C0		dvd
 U+1F9EE		abacus
 
-light & video
+#light & video
 U+1F3A5		movie camera
 U+1F39E		film frames
 U+1F4FD		film projector
@@ -1208,7 +1201,7 @@ U+1F4A1		light bulb
 U+1F526		flashlight
 U+1F3EE		red paper lantern
 
-book-paper
+#book-paper
 U+1F4D4		notebook with decorative cover
 U+1F4D5		closed book
 U+1F4D6		open book
@@ -1227,7 +1220,7 @@ U+1F4D1		bookmark tabs
 U+1F516		bookmark
 U+1F3F7		label
 
-money
+#money
 U+1F4B0		money bag
 U+1F4B4		yen banknote
 U+1F4B5		dollar banknote
@@ -1240,7 +1233,7 @@ U+1F4B9		chart increasing with yen
 U+1F4B1		currency exchange
 U+1F4B2		heavy dollar sign
 
-mail
+#mail
 U+2709		envelope
 U+1F4E7		e-mail
 U+1F4E8		incoming envelope
@@ -1255,7 +1248,7 @@ U+1F4ED		open mailbox with lowered flag
 U+1F4EE		postbox
 U+1F5F3		ballot box with ballot
 
-writing
+#writing
 U+270F		pencil
 U+2712		black nib
 U+1F58B		fountain pen
@@ -1264,7 +1257,7 @@ U+1F58C		paintbrush
 U+1F58D		crayon
 U+1F4DD		memo
 
-office
+#office
 U+1F4BC		briefcase
 U+1F4C1		file folder
 U+1F4C2		open file folder
@@ -1289,7 +1282,7 @@ U+1F5C3		card file box
 U+1F5C4		file cabinet
 U+1F5D1		wastebasket
 
-lock
+#lock
 U+1F512		locked
 U+1F513		unlocked
 U+1F50F		locked with pen
@@ -1297,7 +1290,7 @@ U+1F510		locked with key
 U+1F511		key
 U+1F5DD		old key
 
-tool
+#tool
 U+1F528		hammer
 U+26CF		pick
 U+2692		hammer and pick
@@ -1317,7 +1310,7 @@ U+26D3		chains
 U+1F9F0		toolbox
 U+1F9F2		magnet
 
-science
+#science
 U+2697		alembic
 U+1F9EA		test tube
 U+1F9EB		petri dish
@@ -1326,11 +1319,11 @@ U+1F52C		microscope
 U+1F52D		telescope
 U+1F4E1		satellite antenna
 
-medical
+#medical
 U+1F489		syringe
 U+1F48A		pill
 
-household
+#household
 U+1F6AA		door
 U+1F6CF		bed
 U+1F6CB		couch and lamp
@@ -1347,15 +1340,14 @@ U+1F9FD		sponge
 U+1F9EF		fire extinguisher
 U+1F6D2		shopping cart
 
-other-object
+#other-object
 U+1F6AC		cigarette
 U+26B0		coffin
 U+26B1		funeral urn
 U+1F5FF		moai
 
-Symbols
-
-transport-sign
+##Symbols
+#transport-sign
 U+1F3E7		ATM sign
 U+1F6AE		litter in bin sign
 U+1F6B0		potable water
@@ -1370,7 +1362,7 @@ U+1F6C3		customs
 U+1F6C4		baggage claim
 U+1F6C5		left luggage
 
-warning
+#warning
 U+26A0		warning
 U+1F6B8		children crossing
 U+26D4		no entry
@@ -1385,7 +1377,7 @@ U+1F51E		no one under eighteen
 U+2622		radioactive
 U+2623		biohazard
 
-arrow
+#arrow
 U+2B06		up arrow
 U+2197		up-right arrow
 U+27A1		right arrow
@@ -1408,7 +1400,7 @@ U+1F51B		ON! arrow
 U+1F51C		SOON arrow
 U+1F51D		TOP arrow
 
-religion
+#religion
 U+1F6D0		place of worship
 U+269B		atom symbol
 U+1F549		om
@@ -1422,7 +1414,7 @@ U+262E		peace symbol
 U+1F54E		menorah
 U+1F52F		dotted six-pointed star
 
-zodiac
+#zodiac
 U+2648		Aries
 U+2649		Taurus
 U+264A		Gemini
@@ -1437,7 +1429,7 @@ U+2652		Aquarius
 U+2653		Pisces
 U+26CE		Ophiuchus
 
-av-symbol
+#av-symbol
 U+1F500		shuffle tracks button
 U+1F501		repeat button
 U+1F502		repeat single button
@@ -1463,11 +1455,11 @@ U+1F4F6		antenna bars
 U+1F4F3		vibration mode
 U+1F4F4		mobile phone off
 
-gender
+#gender
 U+2640		female sign
 U+2642		male sign
 
-other-symbol
+#other-symbol
 U+2695		medical symbol
 U+267E		infinity
 U+267B		recycling symbol
@@ -1502,7 +1494,7 @@ U+00A9		copyright
 U+00AE		registered
 U+2122		trade mark
 
-keycap
+#keycap
 U+0023 U+FE0F U+20E3		keycap: #
 U+002A U+FE0F U+20E3		keycap: *
 U+0030 U+FE0F U+20E3		keycap: 0
@@ -1517,7 +1509,7 @@ U+0038 U+FE0F U+20E3		keycap: 8
 U+0039 U+FE0F U+20E3		keycap: 9
 U+1F51F		keycap: 10
 
-alphanum
+#alphanum
 U+1F520		input latin uppercase
 U+1F521		input latin lowercase
 U+1F522		input numbers
@@ -1558,7 +1550,7 @@ U+3299		Japanese â€œsecretâ€ button
 U+1F23A		Japanese â€œopen for businessâ€ button
 U+1F235		Japanese â€œno vacancyâ€ button
 
-geometric
+#geometric
 U+1F534		red circle
 U+1F535		blue circle
 U+26AA		white circle
@@ -1582,9 +1574,8 @@ U+1F518		radio button
 U+1F532		black square button
 U+1F533		white square button
 
-Flags
-
-flag
+##Flags
+#flag
 U+1F3C1		chequered flag
 U+1F6A9		triangular flag
 U+1F38C		crossed flags
@@ -1593,7 +1584,7 @@ U+1F3F3		white flag
 U+1F3F3 U+FE0F U+200D U+1F308		rainbow flag
 U+1F3F4 U+200D U+2620 U+FE0F		pirate flag
 
-country-flag
+#country-flag
 U+1F1E6 U+1F1E8		flag: Ascension Island
 U+1F1E6 U+1F1E9		flag: Andorra
 U+1F1E6 U+1F1EA		flag: United Arab Emirates
@@ -1853,7 +1844,7 @@ U+1F1FF U+1F1E6		flag: South Africa
 U+1F1FF U+1F1F2		flag: Zambia
 U+1F1FF U+1F1FC		flag: Zimbabwe
 
-subdivision-flag
+#subdivision-flag
 U+1F3F4 U+E0067 U+E0062 U+E0065 U+E006E U+E0067 U+E007F		flag: England
 U+1F3F4 U+E0067 U+E0062 U+E0073 U+E0063 U+E0074 U+E007F		flag: Scotland
 U+1F3F4 U+E0067 U+E0062 U+E0077 U+E006C U+E0073 U+E007F		flag: Wales
