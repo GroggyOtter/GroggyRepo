@@ -1,16 +1,16 @@
-    ;=======================================================================================
-    ; Wrapper for QueryPerformanceCounter() 
-    ; Original by: SKAN
-    ; v2 update by: GroggyOtter
-    ; www.autohotkey.com/forum/viewtopic.php?t=52083
-    ; 
-    QPX(on := 0) {
-        Static freq := 0, pc1 := 0, pc2 := 0, diff := 0, X := 0, R := 0
-        If (on && !pc1)
-            Return DllCall("QueryPerformanceFrequency", "Int64P", &freq)
-                . DllCall("QueryPerformanceCounter", "Int64P", &pc1) . (X := diff := 0)
-        DllCall("QueryPerformanceCounter", "Int64P", &pc2), diff += pc2-pc1, pc1 := pc2, X++
-        Return (!x || !freq) ? 0 : (on && X=on) ? (--x << 64)
-            : (on=0 && (R := diff/freq/X)) ? R + (diff := pc1 := X := 0) : 1
-    }
-    ;=======================================================================================
+;========================================================================================;
+; Wrapper for QueryPerformanceCounter()                                                  ;
+; Original by: SKAN                                                                      ;
+; v2 update by: GroggyOtter                                                              ;
+; www.autohotkey.com/forum/viewtopic.php?t=52083                                         ;
+; https://github.com/GroggyOtter/GroggyRepo/blob/master/AHK/QueryPerformanceCounter      ;
+QPX(on := 0) {                                                                           ;
+    Static freq := 0, pc1 := 0, pc2 := 0, diff := 0, X := 0, R := 0                      ;
+    If (on && !pc1)                                                                      ;
+        Return DllCall("QueryPerformanceFrequency", "Int64P", &freq)                     ;
+            . DllCall("QueryPerformanceCounter", "Int64P", &pc1) . (X := diff := 0)      ;
+    DllCall("QueryPerformanceCounter", "Int64P", &pc2), diff += pc2-pc1, pc1 := pc2, X++ ;
+    Return (!x || !freq) ? 0 : (on && X=on) ? (--x << 64)                                ;
+        : (on=0 && (R := diff/freq/X)) ? R + (diff := pc1 := X := 0) : 1                 ;
+}                                                                                        ;
+;========================================================================================;
