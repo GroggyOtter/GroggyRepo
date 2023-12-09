@@ -88,67 +88,102 @@ Sorted tall in descending order
 
 ======================================================================================================================================================================
 
-Sorted wide by character types
+Sorted tall by character type
 
-  _ASCII_TABLE_by_GroggyOtter____________________________________________________________________________________________________________________SORTED_BY_TYPE_HORZ_
- |  CONTROL CHARS                                        |  UPPERCASE  A-Z                                      |  LOWERCASE  a-z                                    |
- |-------------------------------------------------------+------------------------------------------------------+----------------------------------------------------|
- |  DEC  OCT  HEX   BIN       Sym  Descript              |  DEC  OCT  HEX   BIN       Sym  Descript             |  DEC  OCT  HEX   BIN       Sym  Descript           |
- |  0    0    0x00  00000000  NUL  Null                  |  65   101  0x41  01000001  A    Uppercase A          |  97   141  0x61  01100001  a    Lowercase a        |
- |  1    1    0x01  00000001  SOH  Heading Start         |  66   102  0x42  01000010  B    Uppercase B          |  98   142  0x62  01100010  b    Lowercase b        |
- |  2    2    0x02  00000010  STX  Text Start            |  67   103  0x43  01000011  C    Uppercase C          |  99   143  0x63  01100011  c    Lowercase c        |
- |  3    3    0x03  00000011  ETX  Text End              |  68   104  0x44  01000100  D    Uppercase D          |  100  144  0x64  01100100  d    Lowercase d        |
- |  4    4    0x04  00000100  EOT  Transmission End      |  69   105  0x45  01000101  E    Uppercase E          |  101  145  0x65  01100101  e    Lowercase e        |
- |  5    5    0x05  00000101  ENQ  Enquiry               |  70   106  0x46  01000110  F    Uppercase F          |  102  146  0x66  01100110  f    Lowercase f        |
- |  6    6    0x06  00000110  ACK  Acknowledge           |  71   107  0x47  01000111  G    Uppercase G          |  103  147  0x67  01100111  g    Lowercase g        |
- |  7    7    0x07  00000111  BEL  Bell                  |  72   110  0x48  01001000  H    Uppercase H          |  104  150  0x68  01101000  h    Lowercase h        |
- |  8    10   0x08  00001000  BS   Backspace             |  73   111  0x49  01001001  I    Uppercase I          |  105  151  0x69  01101001  i    Lowercase i        |
- |  9    11   0x09  00001001  HT   Horizontal Tab        |  74   112  0x4A  01001010  J    Uppercase J          |  106  152  0x6A  01101010  j    Lowercase j        |
- |  10   12   0x0A  00001010  LF   Line Feed             |  75   113  0x4B  01001011  K    Uppercase K          |  107  153  0x6B  01101011  k    Lowercase k        |
- |  11   13   0x0B  00001011  VT   Vertical Tab          |  76   114  0x4C  01001100  L    Uppercase L          |  108  154  0x6C  01101100  l    Lowercase l        |
- |  12   14   0x0C  00001100  FF   Form Feed             |  77   115  0x4D  01001101  M    Uppercase M          |  109  155  0x6D  01101101  m    Lowercase m        |
- |  13   15   0x0D  00001101  CR   Carriage Return       |  78   116  0x4E  01001110  N    Uppercase N          |  110  156  0x6E  01101110  n    Lowercase n        |
- |  14   16   0x0E  00001110  SO   Shift Out/X-On        |  79   117  0x4F  01001111  O    Uppercase O          |  111  157  0x6F  01101111  o    Lowercase o        |
- |  15   17   0x0F  00001111  SI   Shift In/X-Off        |  80   120  0x50  01010000  P    Uppercase P          |  112  160  0x70  01110000  p    Lowercase p        |
- |  16   20   0x10  00010000  DLE  Data Line Escape      |  81   121  0x51  01010001  Q    Uppercase Q          |  113  161  0x71  01110001  q    Lowercase q        |
- |  17   21   0x11  00010001  DC1  Device Control 1      |  82   122  0x52  01010010  R    Uppercase R          |  114  162  0x72  01110010  r    Lowercase r        |
- |  18   22   0x12  00010010  DC2  Device Control 2      |  83   123  0x53  01010011  S    Uppercase S          |  115  163  0x73  01110011  s    Lowercase s        |
- |  19   23   0x13  00010011  DC3  Device Control 3      |  84   124  0x54  01010100  T    Uppercase T          |  116  164  0x74  01110100  t    Lowercase t        |
- |  20   24   0x14  00010100  DC4  Device Control 4      |  85   125  0x55  01010101  U    Uppercase U          |  117  165  0x75  01110101  u    Lowercase u        |
- |  21   25   0x15  00010101  NAK  Negative Acknowledge  |  86   126  0x56  01010110  V    Uppercase V          |  118  166  0x76  01110110  v    Lowercase v        |
- |  22   26   0x16  00010110  SYN  Synchronous Idle      |  87   127  0x57  01010111  W    Uppercase W          |  119  167  0x77  01110111  w    Lowercase w        |
- |  23   27   0x17  00010111  ETB  Transmit Block End    |  88   130  0x58  01011000  X    Uppercase X          |  120  170  0x78  01111000  x    Lowercase x        |
- |  24   30   0x18  00011000  CAN  Cancel                |  89   131  0x59  01011001  Y    Uppercase Y          |  121  171  0x79  01111001  y    Lowercase y        |
- |  25   31   0x19  00011001  EM   End of Medium         |  90   132  0x5A  01011010  Z    Uppercase Z          |  122  172  0x7A  01111010  z    Lowercase z        |
- |  26   32   0x1A  00011010  SUB  Substitute            |------------------------------------------------------+----------------------------------------------------|
- |  27   33   0x1B  00011011  ESC  Escape                |  SYMBOLS  ! # $ % & ' ( ) * + , - . /                |  SYMBOLS  : ; < = > ? @ [ \ ] ^ _ ` { | } ~ DEL    |
- |  28   34   0x1C  00011100  FS   File Separator        |------------------------------------------------------+----------------------------------------------------|
- |  29   35   0x1D  00011101  GS   Group Separator       |  DEC  OCT  HEX   BIN       Sym  Descript             |  58   072  0x3A  00111010  :    Colon              |
- |  30   36   0x1E  00011110  RS   Record Separator      |  32   40   0x20  10000000       Space                |  59   073  0x3B  00111011  ;    Semicolon          |
- |  31   37   0x1F  00011111  US   Unit Separator        |  33   041  0x21  00100001  !    Exclamation mark     |  60   074  0x3C  00111100  <    &lt; Less than     |
- |-------------------------------------------------------|  34   042  0x20  00100010  "    Quotation marks      |  61   075  0x3D  00111101  =    Equals             |
- |  NUMBERS  0-9                                         |  35   043  0x23  00100011  #    Number               |  62   076  0x3E  00111110  >    &gt; Greater than  |
- |-------------------------------------------------------|  36   044  0x24  00100100  $    Dollar               |  63   077  0x3F  00111111  ?    Question mark      |
- |  DEC  OCT  HEX   BIN       Sym  Descript              |  37   045  0x25  00100101  %    Percent sign         |  64   100  0x40  01000000  @    At symbol          |
- |  48   060  0x30  00110000  0    Zero                  |  38   046  0x26  00100110  &    &amp; Ampersand      |                                                    |
- |  49   061  0x31  00110001  1    One                   |  39   047  0x27  00100111  '    Single quote         |  91   133  0x5B  01011011  [    Open bracket       |
- |  50   062  0x32  00110010  2    Two                   |  40   050  0x28  00101000  (    Open parenthesis     |  92   134  0x5C  01011100  \    Backslash          |
- |  51   063  0x33  00110011  3    Three                 |  41   051  0x29  00101001  )    Close parenthesis    |  93   135  0x5D  01011101  ]    Close bracket      |
- |  52   064  0x34  00110100  4    Four                  |  42   052  0x2A  00101010  *    Asterisk             |  94   136  0x5E  01011110  ^    Caret/circumflex   |
- |  53   065  0x35  00110101  5    Five                  |  43   053  0x2B  00101011  +    Plus                 |  95   137  0x5F  01011111  _    Underscore         |
- |  54   066  0x36  00110110  6    Six                   |  44   054  0x2C  00101100  ,    Comma                |  96   140  0x60  01100000  `    Grave accent       |
- |  55   067  0x37  00110111  7    Seven                 |  45   055  0x2D  00101101  -    Hyphen               |                                                    |
- |  56   070  0x38  00111000  8    Eight                 |  46   056  0x2E  00101110  .    Period/dot           |  123  173  0x7B  01111011  {    Opening brace      |
- |  57   071  0x39  00111001  9    Nine                  |  47   057  0x2F  00101111  /    Slash/divide/ironic  |  124  174  0x7C  01111100  |    Vertical bar       |
- |                                                       |                                                      |  125  175  0x7D  01111101  }    Closing brace      |
- |                                                       |                                                      |  126  176  0x7E  01111110  ~    Equivalency/tilde  |
- |                                                       |                                                      |  127  177  0x7F  01111111       Delete             |
- |_______________________________________________________|______________________________________________________|____________________________________________________|
+  _ASCII_TABLE_by_GroggyOtter________________________________________________________________SORTED_BY_TYPE_VERT_
+ |  CONTROL CHARS                                        |  NUMBERS  0-9                                         |
+ |-------------------------------------------------------+-------------------------------------------------------+
+ |  DEC  OCT  HEX   BIN       Sym  Descript              |  DEC  OCT  HEX   BIN       Sym  Descript              |
+ |  0    0    0x00  00000000  NUL  Null                  |  48   060  0x30  00110000  0    Zero                  |
+ |  1    1    0x01  00000001  SOH  Heading Start         |  49   061  0x31  00110001  1    One                   |
+ |  2    2    0x02  00000010  STX  Text Start            |  50   062  0x32  00110010  2    Two                   |
+ |  3    3    0x03  00000011  ETX  Text End              |  51   063  0x33  00110011  3    Three                 |
+ |  4    4    0x04  00000100  EOT  Transmission End      |  52   064  0x34  00110100  4    Four                  |
+ |  5    5    0x05  00000101  ENQ  Enquiry               |  53   065  0x35  00110101  5    Five                  |
+ |  6    6    0x06  00000110  ACK  Acknowledge           |  54   066  0x36  00110110  6    Six                   |
+ |  7    7    0x07  00000111  BEL  Bell                  |  55   067  0x37  00110111  7    Seven                 |
+ |  8    10   0x08  00001000  BS   Backspace             |  56   070  0x38  00111000  8    Eight                 |
+ |  9    11   0x09  00001001  HT   Horizontal Tab        |  57   071  0x39  00111001  9    Nine                  |
+ |  10   12   0x0A  00001010  LF   Line Feed             |                                                       |
+ |  11   13   0x0B  00001011  VT   Vertical Tab          |-------------------------------------------------------|
+ |  12   14   0x0C  00001100  FF   Form Feed             |  UPPERCASE  A-Z                                       |
+ |  13   15   0x0D  00001101  CR   Carriage Return       |-------------------------------------------------------|
+ |  14   16   0x0E  00001110  SO   Shift Out/X-On        |  DEC  OCT  HEX   BIN       Sym  Descript              |
+ |  15   17   0x0F  00001111  SI   Shift In/X-Off        |  65   101  0x41  01000001  A    Uppercase A           |
+ |  16   20   0x10  00010000  DLE  Data Line Escape      |  66   102  0x42  01000010  B    Uppercase B           |
+ |  17   21   0x11  00010001  DC1  Device Control 1      |  67   103  0x43  01000011  C    Uppercase C           |
+ |  18   22   0x12  00010010  DC2  Device Control 2      |  68   104  0x44  01000100  D    Uppercase D           |
+ |  19   23   0x13  00010011  DC3  Device Control 3      |  69   105  0x45  01000101  E    Uppercase E           |
+ |  20   24   0x14  00010100  DC4  Device Control 4      |  70   106  0x46  01000110  F    Uppercase F           |
+ |  21   25   0x15  00010101  NAK  Negative Acknowledge  |  71   107  0x47  01000111  G    Uppercase G           |
+ |  22   26   0x16  00010110  SYN  Synchronous Idle      |  72   110  0x48  01001000  H    Uppercase H           |
+ |  23   27   0x17  00010111  ETB  Transmit Block End    |  73   111  0x49  01001001  I    Uppercase I           |
+ |  24   30   0x18  00011000  CAN  Cancel                |  74   112  0x4A  01001010  J    Uppercase J           |
+ |  25   31   0x19  00011001  EM   End of Medium         |  75   113  0x4B  01001011  K    Uppercase K           |
+ |  26   32   0x1A  00011010  SUB  Substitute            |  76   114  0x4C  01001100  L    Uppercase L           |
+ |  27   33   0x1B  00011011  ESC  Escape                |  77   115  0x4D  01001101  M    Uppercase M           |
+ |  28   34   0x1C  00011100  FS   File Separator        |  78   116  0x4E  01001110  N    Uppercase N           |
+ |  29   35   0x1D  00011101  GS   Group Separator       |  79   117  0x4F  01001111  O    Uppercase O           |
+ |  30   36   0x1E  00011110  RS   Record Separator      |  80   120  0x50  01010000  P    Uppercase P           |
+ |  31   37   0x1F  00011111  US   Unit Separator        |  81   121  0x51  01010001  Q    Uppercase Q           |
+ |                                                       |  82   122  0x52  01010010  R    Uppercase R           |
+ |-------------------------------------------------------|  83   123  0x53  01010011  S    Uppercase S           |
+ |  SYMBOLS  ! # $ % & ' ( ) * + , - . /                 |  84   124  0x54  01010100  T    Uppercase T           |
+ |-------------------------------------------------------|  85   125  0x55  01010101  U    Uppercase U           |
+ |  DEC  OCT  HEX   BIN       Sym  Descript              |  86   126  0x56  01010110  V    Uppercase V           |
+ |  32   40   0x20  10000000       Space                 |  87   127  0x57  01010111  W    Uppercase W           |
+ |  33   041  0x21  00100001  !    Exclamation mark      |  88   130  0x58  01011000  X    Uppercase X           |
+ |  34   042  0x20  00100010  "    Quotation marks       |  89   131  0x59  01011001  Y    Uppercase Y           |
+ |  35   043  0x23  00100011  #    Number                |  90   132  0x5A  01011010  Z    Uppercase Z           |
+ |  36   044  0x24  00100100  $    Dollar                |                                                       |
+ |  37   045  0x25  00100101  %    Percent sign          |-------------------------------------------------------|
+ |  38   046  0x26  00100110  &    Ampersand             |  LOWERCASE  a-z                                       |
+ |  39   047  0x27  00100111  '    Single quote          |-------------------------------------------------------|
+ |  40   050  0x28  00101000  (    Open parenthesis      |  DEC  OCT  HEX   BIN       Sym  Descript              |
+ |  41   051  0x29  00101001  )    Close parenthesis     |  97   141  0x61  01100001  a    Lowercase a           |
+ |  42   052  0x2A  00101010  *    Asterisk              |  98   142  0x62  01100010  b    Lowercase b           |
+ |  43   053  0x2B  00101011  +    Plus                  |  99   143  0x63  01100011  c    Lowercase c           |
+ |  44   054  0x2C  00101100  ,    Comma                 |  100  144  0x64  01100100  d    Lowercase d           |
+ |  45   055  0x2D  00101101  -    Hyphen                |  101  145  0x65  01100101  e    Lowercase e           |
+ |  46   056  0x2E  00101110  .    Period/dot            |  102  146  0x66  01100110  f    Lowercase f           |
+ |  47   057  0x2F  00101111  /    Slash/divide/ironic   |  103  147  0x67  01100111  g    Lowercase g           |
+ |                                                       |  104  150  0x68  01101000  h    Lowercase h           |
+ |-------------------------------------------------------|  105  151  0x69  01101001  i    Lowercase i           |
+ |  SYMBOLS  : ; < = > ? @                               |  106  152  0x6A  01101010  j    Lowercase j           |
+ |-------------------------------------------------------|  107  153  0x6B  01101011  k    Lowercase k           |
+ |  58   072  0x3A  00111010  :    Colon                 |  108  154  0x6C  01101100  l    Lowercase l           |
+ |  59   073  0x3B  00111011  ;    Semicolon             |  109  155  0x6D  01101101  m    Lowercase m           |
+ |  60   074  0x3C  00111100  <    Less than             |  110  156  0x6E  01101110  n    Lowercase n           |
+ |  61   075  0x3D  00111101  =    Equals                |  111  157  0x6F  01101111  o    Lowercase o           |
+ |  62   076  0x3E  00111110  >    Greater than          |  112  160  0x70  01110000  p    Lowercase p           |
+ |  63   077  0x3F  00111111  ?    Question mark         |  113  161  0x71  01110001  q    Lowercase q           |
+ |  64   100  0x40  01000000  @    At symbol             |  114  162  0x72  01110010  r    Lowercase r           |
+ |                                                       |  115  163  0x73  01110011  s    Lowercase s           |
+ |-------------------------------------------------------|  116  164  0x74  01110100  t    Lowercase t           |
+ |  SYMBOLS  [ \ ] ^ _ `                                 |  117  165  0x75  01110101  u    Lowercase u           |
+ |-------------------------------------------------------|  118  166  0x76  01110110  v    Lowercase v           |
+ |  DEC  OCT  HEX   BIN       Sym  Descript              |  119  167  0x77  01110111  w    Lowercase w           |
+ |  91   133  0x5B  01011011  [    Open bracket          |  120  170  0x78  01111000  x    Lowercase x           |
+ |  92   134  0x5C  01011100  \    Backslash             |  121  171  0x79  01111001  y    Lowercase y           |
+ |  93   135  0x5D  01011101  ]    Close bracket         |  122  172  0x7A  01111010  z    Lowercase z           |
+ |  94   136  0x5E  01011110  ^    Caret/circumflex      |                                                       |
+ |  95   137  0x5F  01011111  _    Underscore            |                                                       |
+ |  96   140  0x60  01100000  `    Grave accent          |                                                       |
+ |                                                       |                                                       |
+ |-------------------------------------------------------|                                                       |
+ |  SYMBOLS  { | } ~ DEL                                 |                                                       |
+ |-------------------------------------------------------|                                                       |
+ |  123  173  0x7B  01111011  {    Opening brace         |                                                       |
+ |  124  174  0x7C  01111100  |    Vertical bar          |                                                       |
+ |  125  175  0x7D  01111101  }    Closing brace         |                                                       |
+ |  126  176  0x7E  01111110  ~    Equivalency/tilde     |                                                       |
+ |  127  177  0x7F  01111111       Delete                |                                                       |
+ |_______________________________________________________|_______________________________________________________|
 
 
 ======================================================================================================================================================================
 
-# Sorted wide in descending order
+Sorted wide in descending order
 
   _ASCII_TABLE_by_GroggyOtter____________________________________________________________________________________________________________SORTED_BY_NUMBER_HORZ_
  |  CONTROL CHARS                                        |  NUMBERS  0-9                                  |  SYMBOLS  [ \ ] ^ _ `                              |
@@ -208,3 +243,64 @@ Sorted wide by character types
  |  46   056  0x2E  00101110  .    Period/dot            |  90   132  0x5A  01011010  Z    Uppercase Z    |                                                    |
  |  47   057  0x2F  00101111  /    Slash/divide/ironic   |                                                |                                                    |
  |_______________________________________________________|________________________________________________|____________________________________________________|
+
+
+
+======================================================================================================================================================================
+
+Sorted wide by character type
+
+  _ASCII_TABLE_by_GroggyOtter____________________________________________________________________________________________________________________SORTED_BY_TYPE_HORZ_
+ |  CONTROL CHARS                                        |  UPPERCASE  A-Z                                      |  LOWERCASE  a-z                                    |
+ |-------------------------------------------------------+------------------------------------------------------+----------------------------------------------------|
+ |  DEC  OCT  HEX   BIN       Sym  Descript              |  DEC  OCT  HEX   BIN       Sym  Descript             |  DEC  OCT  HEX   BIN       Sym  Descript           |
+ |  0    0    0x00  00000000  NUL  Null                  |  65   101  0x41  01000001  A    Uppercase A          |  97   141  0x61  01100001  a    Lowercase a        |
+ |  1    1    0x01  00000001  SOH  Heading Start         |  66   102  0x42  01000010  B    Uppercase B          |  98   142  0x62  01100010  b    Lowercase b        |
+ |  2    2    0x02  00000010  STX  Text Start            |  67   103  0x43  01000011  C    Uppercase C          |  99   143  0x63  01100011  c    Lowercase c        |
+ |  3    3    0x03  00000011  ETX  Text End              |  68   104  0x44  01000100  D    Uppercase D          |  100  144  0x64  01100100  d    Lowercase d        |
+ |  4    4    0x04  00000100  EOT  Transmission End      |  69   105  0x45  01000101  E    Uppercase E          |  101  145  0x65  01100101  e    Lowercase e        |
+ |  5    5    0x05  00000101  ENQ  Enquiry               |  70   106  0x46  01000110  F    Uppercase F          |  102  146  0x66  01100110  f    Lowercase f        |
+ |  6    6    0x06  00000110  ACK  Acknowledge           |  71   107  0x47  01000111  G    Uppercase G          |  103  147  0x67  01100111  g    Lowercase g        |
+ |  7    7    0x07  00000111  BEL  Bell                  |  72   110  0x48  01001000  H    Uppercase H          |  104  150  0x68  01101000  h    Lowercase h        |
+ |  8    10   0x08  00001000  BS   Backspace             |  73   111  0x49  01001001  I    Uppercase I          |  105  151  0x69  01101001  i    Lowercase i        |
+ |  9    11   0x09  00001001  HT   Horizontal Tab        |  74   112  0x4A  01001010  J    Uppercase J          |  106  152  0x6A  01101010  j    Lowercase j        |
+ |  10   12   0x0A  00001010  LF   Line Feed             |  75   113  0x4B  01001011  K    Uppercase K          |  107  153  0x6B  01101011  k    Lowercase k        |
+ |  11   13   0x0B  00001011  VT   Vertical Tab          |  76   114  0x4C  01001100  L    Uppercase L          |  108  154  0x6C  01101100  l    Lowercase l        |
+ |  12   14   0x0C  00001100  FF   Form Feed             |  77   115  0x4D  01001101  M    Uppercase M          |  109  155  0x6D  01101101  m    Lowercase m        |
+ |  13   15   0x0D  00001101  CR   Carriage Return       |  78   116  0x4E  01001110  N    Uppercase N          |  110  156  0x6E  01101110  n    Lowercase n        |
+ |  14   16   0x0E  00001110  SO   Shift Out/X-On        |  79   117  0x4F  01001111  O    Uppercase O          |  111  157  0x6F  01101111  o    Lowercase o        |
+ |  15   17   0x0F  00001111  SI   Shift In/X-Off        |  80   120  0x50  01010000  P    Uppercase P          |  112  160  0x70  01110000  p    Lowercase p        |
+ |  16   20   0x10  00010000  DLE  Data Line Escape      |  81   121  0x51  01010001  Q    Uppercase Q          |  113  161  0x71  01110001  q    Lowercase q        |
+ |  17   21   0x11  00010001  DC1  Device Control 1      |  82   122  0x52  01010010  R    Uppercase R          |  114  162  0x72  01110010  r    Lowercase r        |
+ |  18   22   0x12  00010010  DC2  Device Control 2      |  83   123  0x53  01010011  S    Uppercase S          |  115  163  0x73  01110011  s    Lowercase s        |
+ |  19   23   0x13  00010011  DC3  Device Control 3      |  84   124  0x54  01010100  T    Uppercase T          |  116  164  0x74  01110100  t    Lowercase t        |
+ |  20   24   0x14  00010100  DC4  Device Control 4      |  85   125  0x55  01010101  U    Uppercase U          |  117  165  0x75  01110101  u    Lowercase u        |
+ |  21   25   0x15  00010101  NAK  Negative Acknowledge  |  86   126  0x56  01010110  V    Uppercase V          |  118  166  0x76  01110110  v    Lowercase v        |
+ |  22   26   0x16  00010110  SYN  Synchronous Idle      |  87   127  0x57  01010111  W    Uppercase W          |  119  167  0x77  01110111  w    Lowercase w        |
+ |  23   27   0x17  00010111  ETB  Transmit Block End    |  88   130  0x58  01011000  X    Uppercase X          |  120  170  0x78  01111000  x    Lowercase x        |
+ |  24   30   0x18  00011000  CAN  Cancel                |  89   131  0x59  01011001  Y    Uppercase Y          |  121  171  0x79  01111001  y    Lowercase y        |
+ |  25   31   0x19  00011001  EM   End of Medium         |  90   132  0x5A  01011010  Z    Uppercase Z          |  122  172  0x7A  01111010  z    Lowercase z        |
+ |  26   32   0x1A  00011010  SUB  Substitute            |------------------------------------------------------+----------------------------------------------------|
+ |  27   33   0x1B  00011011  ESC  Escape                |  SYMBOLS  ! # $ % & ' ( ) * + , - . /                |  SYMBOLS  : ; < = > ? @ [ \ ] ^ _ ` { | } ~ DEL    |
+ |  28   34   0x1C  00011100  FS   File Separator        |------------------------------------------------------+----------------------------------------------------|
+ |  29   35   0x1D  00011101  GS   Group Separator       |  DEC  OCT  HEX   BIN       Sym  Descript             |  58   072  0x3A  00111010  :    Colon              |
+ |  30   36   0x1E  00011110  RS   Record Separator      |  32   40   0x20  10000000       Space                |  59   073  0x3B  00111011  ;    Semicolon          |
+ |  31   37   0x1F  00011111  US   Unit Separator        |  33   041  0x21  00100001  !    Exclamation mark     |  60   074  0x3C  00111100  <    &lt; Less than     |
+ |-------------------------------------------------------|  34   042  0x20  00100010  "    Quotation marks      |  61   075  0x3D  00111101  =    Equals             |
+ |  NUMBERS  0-9                                         |  35   043  0x23  00100011  #    Number               |  62   076  0x3E  00111110  >    &gt; Greater than  |
+ |-------------------------------------------------------|  36   044  0x24  00100100  $    Dollar               |  63   077  0x3F  00111111  ?    Question mark      |
+ |  DEC  OCT  HEX   BIN       Sym  Descript              |  37   045  0x25  00100101  %    Percent sign         |  64   100  0x40  01000000  @    At symbol          |
+ |  48   060  0x30  00110000  0    Zero                  |  38   046  0x26  00100110  &    &amp; Ampersand      |                                                    |
+ |  49   061  0x31  00110001  1    One                   |  39   047  0x27  00100111  '    Single quote         |  91   133  0x5B  01011011  [    Open bracket       |
+ |  50   062  0x32  00110010  2    Two                   |  40   050  0x28  00101000  (    Open parenthesis     |  92   134  0x5C  01011100  \    Backslash          |
+ |  51   063  0x33  00110011  3    Three                 |  41   051  0x29  00101001  )    Close parenthesis    |  93   135  0x5D  01011101  ]    Close bracket      |
+ |  52   064  0x34  00110100  4    Four                  |  42   052  0x2A  00101010  *    Asterisk             |  94   136  0x5E  01011110  ^    Caret/circumflex   |
+ |  53   065  0x35  00110101  5    Five                  |  43   053  0x2B  00101011  +    Plus                 |  95   137  0x5F  01011111  _    Underscore         |
+ |  54   066  0x36  00110110  6    Six                   |  44   054  0x2C  00101100  ,    Comma                |  96   140  0x60  01100000  `    Grave accent       |
+ |  55   067  0x37  00110111  7    Seven                 |  45   055  0x2D  00101101  -    Hyphen               |                                                    |
+ |  56   070  0x38  00111000  8    Eight                 |  46   056  0x2E  00101110  .    Period/dot           |  123  173  0x7B  01111011  {    Opening brace      |
+ |  57   071  0x39  00111001  9    Nine                  |  47   057  0x2F  00101111  /    Slash/divide/ironic  |  124  174  0x7C  01111100  |    Vertical bar       |
+ |                                                       |                                                      |  125  175  0x7D  01111101  }    Closing brace      |
+ |                                                       |                                                      |  126  176  0x7E  01111110  ~    Equivalency/tilde  |
+ |                                                       |                                                      |  127  177  0x7F  01111111       Delete             |
+ |_______________________________________________________|______________________________________________________|____________________________________________________|
