@@ -1,0 +1,905 @@
+class Gui extends Object {
+    class Control extends Object {
+
+         * @param {String|'AltSubmit'|'Background'|'BackgroundTrans'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+        
+         * @param {String|'bold'|'italic'|'strike'|'underline'|'norm'|'C'|'S'|'W'|'Q'} [Options]  
+        SetFont([Options:=GuiFontOptions, FontName:=GuiFontType]) => EmptyString
+    }
+    
+    class Button extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Default'|'Border'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class CheckBox extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+         * @param {String|'Check3'|'Checked'|'CheckedGray'|'Background'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Custom extends Gui.Control {
+         * @param {String|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class DateTime extends Gui.Control {
+         * @param {'Change'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+         * @param {String|'Choose'|'ChooseNone'|'Range'|'1'|'2'|'Colors'|'Background'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+        
+         * @param {'ShortDate'|'LongDate'|'Time'} [DateFormat]  
+        SetFormat([DateFormat:='']) => EmptyString
+    }
+    
+    class Edit extends Gui.Control {
+         * @param {'Change'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Limit'|'Lowercase'|'Multi'|'Number'|'Password'|'ReadOnly'|'T'|'Uppercase'|'WantCtrlA'|'WantReturn'|'WantTab'|'AltSubmit'|'Background'|'BackgroundTrans'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class GroupBox extends Gui.Control {
+         * @param {'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Background'|'BackgroundTrans'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Hotkey extends Gui.Control {
+         * @param {'Change'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Limit'|'Background'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Link extends Gui.Control {
+         * @param {'Click'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class ComboBox extends Gui.List {
+         * @param {'Change'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Choose'|'Uppercase'|'Lowercase'|'Sort'|'Limit'|'Simple'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class DDL extends Gui.List {
+         * @param {'Change'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Choose'|'Uppercase'|'Lowercase'|'Sort'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class DropDownList extends Gui.List {
+         * @param {'Change'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+         * @param {String|'Choose'|'Uppercase'|'Lowercase'|'Sort'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class ListBox extends Gui.List {
+         * @param {'Change'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Choose'|'Multi'|'ReadOnly'|'Sort'|'T'|'0x100'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Tab extends Gui.List {
+         * @param {'Change'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Choose'|'Buttons'|'Left'|'Right'|'Bottom'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+        
+    class ListView extends Gui.Control {
+
+         * @param {String|'Check'|'Col'|'Focus'|'Icon'|'Select'} [Options]  
+        Add([Options:='', Col1, ColN*]) => Integer
+        
+         * @param {'S'|'Col'} [Mode]  
+        GetCount([Mode:=unset]) => Integer
+        
+         * @param {String|'Check'|'Col'|'Focus'|'Icon'|'Select'} [Options]  
+        Insert(RowNumber [,Options:='', Col1, ColN*]) => Integer
+        
+         * @param {'Check'|'Col'|'Focus'|'Icon'|'Select'} [Options]  
+        InsertCol(ColumnNumber [,Options:='', ColumnTitle:='']) => String
+        
+         * @param {'Check'|'Col'|'Focus'|'Icon'|'Select'} [Options]  
+        Modify(RowNumber [,Options:='', Col1, ColN*]) => EmptyString
+
+         * @param {'Auto'|'AutoHdr'|'Icon'|'IconRight'|'Text'|'Integer'|'Float'|'Center'|'Left'|'Right'|'Case'|'CaseLocale'|'Desc'|'Logical'|'NoSort'|'Sort'|'SortDesc'|'Uni'} [Options]  
+        ModifyCol([ColumnNumber:=unset, Options:=unset, ColumnTitle:=unset]) => String
+
+         * @param {'Click'|'DoubleClick'|'ColClick'|'ContextMenu'|'Focus'|'LoseFocus'|'ItemCheck'|'ItemEdit'|'ItemFocus'|'ItemSelect'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+         * @param {String|'Checked'|'Count'|'Grid'|'Hdr'|'Multi'|'NoSortHdr'|'NoSort'|'ReadOnly'|'Sort'|'SortDesc'|'WantF2'|'Icon'|'Tile'|'IconSmall'|'List'|'Report'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+        
+        SetImageList(ImageListID [,IconType:=unset]) => String
+    }
+    
+    class MonthCal extends Gui.Control {
+         * @param {'Change'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Multi'|'Range'|'4'|'8'|'16'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Pic extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Icon'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Picture extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Icon'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Progress extends Gui.Control {
+         * @param {'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Range'|'Smooth'|'Vertical'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Radio extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Checked'|'Group'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Left'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Slider extends Gui.Control {
+         * @param {'Change'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Background'|'Border'|'Disabled'|'Hidden'|'Redraw'|'Section'|'Theme'|'v'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class StatusBar extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Background'|'Border'|'Disabled'|'Hidden'|'Redraw'|'Section'|'Theme'|'v'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class Text extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Background'|'BackgroundTrans'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Left'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class TreeView extends Gui.Control {
+         * @param {'Click'|'DoubleClick'|'ContextMenu'|'Focus'|'LoseFocus'|'ItemCheck'|'ItemEdit'|'ItemExpand'|'ItemSelect'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+        
+
+         * @param {String|'Buttons'|'Checked'|'ImageList'|'Lines'|'ReadOnly'|'WantF2'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+    class UpDown extends Gui.Control {
+         * @param {'Change'|'ContextMenu'} EventName  
+        OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+         * @param {String|'Horz'|'Left'|'Right'|'Range'|'Wrap'|'-16'|'0x80'|'Increments'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+        Opt(Options) => EmptyString
+    }
+    
+     * @param {String|'AlwaysOnTop'|'Border'|'Caption'|'Disabled'|'DPIScale'|'LastFound'|'MaximizeBox'|'MaxSize'|'MinimizeBox'|'MinSize'|'OwnDialogs'|'Owner'|'Parent'|'Resize'|'SysMenu'|'Theme'|'ToolWindow'} [Options]  
+    Static Call([Options:='', Title:=A_ScriptName, EventObj:=unset]) => Gui
+
+     * @param {'ActiveX'|'Button'|'Checkbox'|'ComboBox'|'Custom'|'DateTime'|'DDL'|'DropDownList'|'Edit'|'GroupBox'|'Hotkey'|'Link'|'ListBox'|'ListView'|'MonthCal'|'Pic'|'Picture'|'Progress'|'Radio'|'Slider'|'StatusBar'|'Tab'|'Tab2'|'Tab3'|'Text'|'TreeView'|'UpDown'} ControlType
+
+     * @param {String|'AltSubmit'|'Background'|'BackgroundTrans'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    Add(ControlType [,Options:='', ControlSpecific:=unset]) => Gui.Control
+    
+     * @param {String|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddActiveX([Options:='', ActiveXName:=unset]) => Gui.ActiveX
+    
+     * @param {String|'Default'|'Border'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddButton([Options:='', BtnText:='']) => Gui.Button
+    
+     * @param {String|'Check3'|'Checked'|'CheckedGray'|'Background'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddCheckbox([Options:='', Label:='']) => Gui.Checkbox
+    
+     * @param {String|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddCustom([Options:='', ControlSpecific:='']) => Gui.Custom
+    
+     * @param {String|'Choose'|'ChooseNone'|'Range'|'1'|'2'|'Colors'|'Background'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddDateTime([Options:='', DateFormat:='ShortDate']) => Gui.DateTime
+    
+     * @param {String|'Limit'|'Lowercase'|'Multi'|'Number'|'Password'|'ReadOnly'|'T'|'Uppercase'|'WantCtrlA'|'WantReturn'|'WantTab'|'AltSubmit'|'Background'|'BackgroundTrans'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddEdit([Options:='', Text:='']) => Gui.Edit
+    
+     * @param {String|'Background'|'BackgroundTrans'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'Left'|'r'|'Redraw'|'Right'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddGroupBox([Options:='', Label:='']) => Gui.GroupBox
+    
+     * @param {String|'Limit'|'Background'|'Border'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'Wrap'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddHotkey([Options:='', DefaultKey:='']) => Gui.Hotkey
+    
+     * @param {String|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddLink([Options:='', Text:='']) => Gui.Link
+    
+     * @param {String|'Checked'|'Count'|'Grid'|'Hdr'|'Multi'|'NoSortHdr'|'NoSort'|'ReadOnly'|'Sort'|'SortDesc'|'WantF2'|'Icon'|'Tile'|'IconSmall'|'List'|'Report'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddListView([Options:='', ColumnTitles:=Array]) => Gui.ListView
+    
+     * @param {String|'Multi'|'Range'|'4'|'8'|'16'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddMonthCal([Options:='', Date:=A_Now]) => Gui.MonthCal
+    
+     * @param {String|'Icon'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddPic([Options:='', Path:=A_WorkingDir]) => Gui.Pic
+    
+     * @param {String|'Icon'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddPicture([Options:='', Path:=A_WorkingDir]) => Gui.Pic
+    
+     * @param {String|'Range'|'Smooth'|'Vertical'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddProgress([Options:='', StartingPos:=0]) => Gui.Progress
+    
+     * @param {String|'Checked'|'Group'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Left'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddRadio([Options:='', Label:='']) => Gui.Radio
+    
+     * @param {String|'Buddy1'|'Buddy2'|'Invert'|'NoTicks'|'Line'|'Page'|'Range'|'Thick'|'TickInterval'|'ToolTip'|'ToolTipLeft'|'ToolTipRight'|'ToolTipTop'|'ToolTipBottom'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Left'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddSlider([Options:='', StartingPos:=0]) => Gui.Slider
+    
+     * @param {String|'Background'|'Border'|'Disabled'|'Hidden'|'Redraw'|'Section'|'Theme'|'v'} Options  
+    AddStatusBar([Options:='', Label:='']) => Gui.StatusBar
+    
+     * @param {String|'Background'|'BackgroundTrans'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Center'|'Left'|'Right'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddText([Options:='', Text:='']) => Gui.Text
+    
+     * @param {String|'Buttons'|'Checked'|'ImageList'|'Lines'|'ReadOnly'|'WantF2'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddTreeView([Options:='', Text:='']) => Gui.TreeView
+    
+     * @param {String|'Horz'|'Left'|'Right'|'Range'|'Wrap'|'-16'|'0x80'|'Increments'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddUpDown([Options:='', StartingPos:=0]) => Gui.UpDown
+    
+     * @param {String|'Choose'|'Uppercase'|'Lowercase'|'Sort'|'Limit'|'Simple'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddComboBox([Options:='', Text:=Array]) => Gui.ComboBox
+    
+     * @param {String|'Choose'|'Uppercase'|'Lowercase'|'Sort'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddDDL([Options:='', List:=Array]) => Gui.DDL
+
+     * @param {String|'Choose'|'Uppercase'|'Lowercase'|'Sort'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddDropDownList([Options:='', List:=Array]) => Gui.DDL
+
+     * @param {String|'Choose'|'Multi'|'ReadOnly'|'Sort'|'T'|'0x100'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddListBox([Options:='', List:=Array]) => Gui.ListBox
+
+     * @param {String|'Choose'|'Buttons'|'Left'|'Right'|'Bottom'|'AltSubmit'|'Background'|'c'|'cBlack'|'cSilver'|'cGray'|'cWhite'|'cMaroon'|'cRed'|'cPurple'|'cFuchsia'|'cGreen'|'cLime'|'cOlive'|'cYellow'|'cNavy'|'cBlue'|'cTeal'|'cAqua'|'Wrap'|'Border'|'Disabled'|'h'|'hp'|'Hidden'|'HScroll'|'r'|'Redraw'|'Section'|'Tabstop'|'Theme'|'v'|'VScroll'|'w'|'wp'|'x'|'xp'|'xs'|'y'|'yp'|'ys'} Options  
+    AddTab3([Options:='', TabTitles:=Array]) => Gui.Tab
+
+     * @param {'Close'|'ContextMenu'|'DropFiles'|'Escape'|'Size'} EventName  
+    OnEvent(EventName, Callback [,AddRemove:=1]) => EmptyString
+
+     * @param {String|'AlwaysOnTop'|'Border'|'Caption'|'Disabled'|'DPIScale'|'LastFound'|'MaximizeBox'|'MaxSize'|'MinimizeBox'|'MinSize'|'OwnDialogs'|'Owner'|'Parent'|'Resize'|'SysMenu'|'Theme'|'ToolWindow'} Options  
+    Opt(Options) => EmptyString
+    
+     * @param {String|'bold'|'italic'|'strike'|'underline'|'norm'|'c'|'s'|'w'|'q'} [Options]  
+    SetFont([Options:='', FontName:=PriorFont]) => EmptyString
+
+     * @param {String|'x'|'y'|'w'|'h'|'Center'|'xCenter'|'yCenter'|'AutoSize'|'Maximize'|'Minimize'|'Restore'|'NoActivate'|'NA'|'Hide'} [Options]  
+    Show([Options:='']) => EmptyString
+    
+     * @param {String|'AlwaysOnTop'|'Border'|'Caption'|'Disabled'|'DPIScale'|'LastFound'|'MaximizeBox'|'MaxSize'|'MinimizeBox'|'MinSize'|'OwnDialogs'|'Owner'|'Parent'|'Resize'|'SysMenu'|'Theme'|'ToolWindow'} [Options]  
+    __New([Options, Title, EventObj]) => Gui
+}
+
+class InputHook extends Object {
+     * @param {String|'B'|'C'|'E'|'I'|'L'|'M'|'T'|'V'|'*'} [Options]  
+     * @param {String|'{All}'|'{Alt}'|'{AppsKey}'|'{Backspace}'|'{Browser_Back}'|'{Browser_Favorites}'|'{Browser_Forward}'|'{Browser_Home}'|'{Browser_Refresh}'|'{Browser_Search}'|'{Browser_Stop}'|'{CapsLock}'|'{Control}'|'{CtrlBreak}'|'{Delete}'|'{Down}'|'{End}'|'{Enter}'|'{Escape}'|'{F1}'|'{F10}'|'{F11}'|'{F12}'|'{F13}'|'{F14}'|'{F15}'|'{F16}'|'{F17}'|'{F18}'|'{F19}'|'{F2}'|'{F20}'|'{F21}'|'{F22}'|'{F23}'|'{F24}'|'{F3}'|'{F4}'|'{F5}'|'{F6}'|'{F7}'|'{F8}'|'{F9}'|'{Help}'|'{Home}'|'{Insert}'|'{LAlt}'|'{Launch_App1}'|'{Launch_App2}'|'{Launch_Mail}'|'{Launch_Media}'|'{LButton}'|'{LControl}'|'{Left}'|'{LShift}'|'{LWin}'|'{MButton}'|'{Media_Next}'|'{Media_Play_Pause}'|'{Media_Prev}'|'{Media_Stop}'|'{NumLock}'|'{Numpad0}'|'{Numpad1}'|'{Numpad2}'|'{Numpad3}'|'{Numpad4}'|'{Numpad5}'|'{Numpad6}'|'{Numpad7}'|'{Numpad8}'|'{Numpad9}'|'{NumpadAdd}'|'{NumpadClear}'|'{NumpadDel}'|'{NumpadDiv}'|'{NumpadDot}'|'{NumpadDown}'|'{NumpadEnd}'|'{NumpadEnter}'|'{NumpadHome}'|'{NumpadIns}'|'{NumpadLeft}'|'{NumpadMult}'|'{NumpadPgDn}'|'{NumpadPgUp}'|'{NumpadRight}'|'{NumpadSub}'|'{NumpadUp}'|'{Pause}'|'{PgDn}'|'{PgUp}'|'{PrintScreen}'|'{RAlt}'|'{RButton}'|'{RControl}'|'{Right}'|'{RShift}'|'{RWin	}'|'{SC###}'|'{ScrollLock}'|'{Shift}'|'{Sleep}'|'{Space}'|'{Tab}'|'{Up}'|'{VK##}'|'{Volume_Down}'|'{Volume_Mute}'|'{Volume_Up}'|'{WheelDown}'|'{WheelLeft}'|'{WheelRight}'|'{WheelUp}'|'{XButton1}'|'{XButton2}'} [EndKeys]  
+    static Call([Options, EndKeys, MatchList]) => InputHook
+    
+     * @param {String|'{All}'|'{Alt}'|'{AppsKey}'|'{Backspace}'|'{Browser_Back}'|'{Browser_Favorites}'|'{Browser_Forward}'|'{Browser_Home}'|'{Browser_Refresh}'|'{Browser_Search}'|'{Browser_Stop}'|'{CapsLock}'|'{Control}'|'{CtrlBreak}'|'{Delete}'|'{Down}'|'{End}'|'{Enter}'|'{Escape}'|'{F1}'|'{F10}'|'{F11}'|'{F12}'|'{F13}'|'{F14}'|'{F15}'|'{F16}'|'{F17}'|'{F18}'|'{F19}'|'{F2}'|'{F20}'|'{F21}'|'{F22}'|'{F23}'|'{F24}'|'{F3}'|'{F4}'|'{F5}'|'{F6}'|'{F7}'|'{F8}'|'{F9}'|'{Help}'|'{Home}'|'{Insert}'|'{LAlt}'|'{Launch_App1}'|'{Launch_App2}'|'{Launch_Mail}'|'{Launch_Media}'|'{LButton}'|'{LControl}'|'{Left}'|'{LShift}'|'{LWin}'|'{MButton}'|'{Media_Next}'|'{Media_Play_Pause}'|'{Media_Prev}'|'{Media_Stop}'|'{NumLock}'|'{Numpad0}'|'{Numpad1}'|'{Numpad2}'|'{Numpad3}'|'{Numpad4}'|'{Numpad5}'|'{Numpad6}'|'{Numpad7}'|'{Numpad8}'|'{Numpad9}'|'{NumpadAdd}'|'{NumpadClear}'|'{NumpadDel}'|'{NumpadDiv}'|'{NumpadDot}'|'{NumpadDown}'|'{NumpadEnd}'|'{NumpadEnter}'|'{NumpadHome}'|'{NumpadIns}'|'{NumpadLeft}'|'{NumpadMult}'|'{NumpadPgDn}'|'{NumpadPgUp}'|'{NumpadRight}'|'{NumpadSub}'|'{NumpadUp}'|'{Pause}'|'{PgDn}'|'{PgUp}'|'{PrintScreen}'|'{RAlt}'|'{RButton}'|'{RControl}'|'{Right}'|'{RShift}'|'{RWin	}'|'{SC###}'|'{ScrollLock}'|'{Shift}'|'{Sleep}'|'{Space}'|'{Tab}'|'{Up}'|'{VK##}'|'{Volume_Down}'|'{Volume_Mute}'|'{Volume_Up}'|'{WheelDown}'|'{WheelLeft}'|'{WheelRight}'|'{WheelUp}'|'{XButton1}'|'{XButton2}'} Keys  
+     * @param {String|'E'|'I'|'N'|'S'|'V'} KeyOptions  
+    KeyOpt(Keys, KeyOptions) => EmptyString
+}
+
+class Menu extends Object {
+
+     * @param {String|'P'|'Radio'|'Right'|'Break'|'BarBreak'} [Options]  
+    Add([MenuItemName:=unset, CallbackOrSubmenu:=unset, Options:=unset]) => EmptyString
+
+     * @param {String|'P'|'Radio'|'Right'|'Break'|'BarBreak'} [Options]  
+    Insert([MenuItemName:=unset, Item:=unset, CallbackOrSubmenu:=unset, Options:=unset]) => EmptyString
+}
+
+class MenuBar extends Menu {
+     * @param {String|'P'|'Radio'|'Right'|'Break'|'BarBreak'} [Options]  
+    Add([MenuItemName:=unset, CallbackOrSubmenu:=unset, Options:=unset]) => EmptyString
+    
+
+     * @param {String|'P'|'Radio'|'Right'|'Break'|'BarBreak'} [Options]  
+    Insert([MenuItemName:=unset, Item:=unset, CallbackOrSubmenu:=unset, Options:=unset]) => EmptyString
+}
+
+;@endregion
+
+;@region functions
+
+ * @param {'On'|'Off'|'Send'|'Mouse'|'Default'|'MouseMove'|'MouseMoveOff'} [Mode]  
+BlockInput([Mode]) => EmptyString
+
+ * @param {'&var'|'Fast'|'CDecl'} Options  
+CallbackCreate(Function [,Options:='', ParamCount:=unset]) => Integer
+
+ * @param {'Left'|'Right'|'Middle'|'X1'|'X2'|'WheelUp'|'WheelDown'|'WheelRight'|'WheelLeft'} [Button]  
+ * @param {'Down'|'Up'} [State]  
+ * @param {'Rel'} [Relative]  
+Click([Button:='L', X:=unset, Y:=unset, Count:=1, State:=unset, Relative:=unset]) => EmptyString
+
+ * @param {{'Str'|'WStr'|'AStr'|'Int64'|'Int'|'Short'|'Char'|'Float'|'Double'|'UInt'|'UShort'|'UChar'|'Ptr'}} [TypeN]  
+ * @param {{'Str'|'WStr'|'AStr'|'Int64'|'Int'|'Short'|'Char'|'Float'|'Double'|'UInt'|'UShort'|'UChar'|'Ptr'}} [TypeN]  
+ComCall(Index, ComObj [,TypeN:=unset, ArgN:=unset, ReturnType:='HRESULT'], *) => Primitive
+
+ * @param {'Name'|'IID'|'Class'|'CLSID'} [InfoType]
+ComObjType(ComObj [,InfoType:=unset]) => Primitive
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlAddItem(Str, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlChooseIndex(N, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlChooseString(Str, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ * @param {String|'NA'|'D'|'U'|'Pos'|'x y '} [Options]  
+ControlClick([ConOrPos:=unset, WinTitle:='', WinText:='', Button:='Left', Count:=1, Options:=unset, NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlDeleteItem(N, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlFindItem(Str, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlFocus(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetChecked(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetChoice(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetClassNN(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetEnabled(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetFocus([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetHwnd(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetIndex(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetItems(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Array
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetPos([&OutX, &OutY, &OutWidth, &OutHeight, Control:=unset, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetStyle(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetExStyle(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetText(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlGetVisible(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlHide(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlHideDropDown(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlMove([X, Y, Width, Height, Control, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSend(Keys [,Control:=unset, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSendText(Keys [,Control:=unset, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSetChecked(NewSetting, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSetEnabled(NewSetting, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSetStyle(Value, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSetExStyle(Value, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlSetText(NewText, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlShow(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ControlShowDropDown(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ToolTip'|'Pixel'|'Mouse'|'Caret'|'Menu'} TargetType  
+ * @param {'Client'|'Screen'|'Window'} [RelativeTo]  
+CoordMode(TargetType [,RelativeTo:='Screen']) => String
+
+ * @param {'On'|'Off'} [Setting]  
+Critical([Setting:='On']) => Integer
+
+ * @param {'Seconds'|'Minutes'|'Hours'|'Days'} TimeUnits  
+DateAdd(DateTime, Time, TimeUnits) => String
+
+ * @param {'Seconds'|'Minutes'|'Hours'|'Days'} TimeUnits  
+DateDiff(DateTime1, DateTime2, TimeUnits) => Integer 
+
+ * @param {'0'|'1'|'2'|'R'} [OverwriteRename]  
+DirMove(Source, Dest [,OverwriteOrRename:=0]) => EmptyString 
+
+ * @param {{'Str'|'WStr'|'AStr'|'Int64'|'Int'|'Short'|'Char'|'Float'|'Double'|'UInt'|'UShort'|'UChar'|'Ptr'}} [TypeN]  
+DllCall(DLLNameOrPath [,Type1, Arg1, ReturnType:='Int'], *) => String
+
+ * @param {'CDROM'|'REMOVABLE'|'FIXED'|'NETWORK'|'RAMDISK'|'UNKNOWN'} [DriveType]  
+DriveGetList([DriveType:=unset]) => String 
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+EditGetCurrentCol(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {(String|Integer|Object)} Control - A control's ClassNN, Text, HWND (handle), or an object with an HWND property. See {@link https://www.autohotkey.com/docs/v2/lib/Control.htm#Parameter|Control Parameter}.  
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+EditGetCurrentLine(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+EditGetLine(N, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+EditGetLineCount(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+EditGetSelectedText(Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+EditPaste(Text, Control [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'CP0'|'UTF-8'|'UTF-8-RAW'|'UTF-16'|'UTF-16-RAW'|'CPnnn'|'RAW'|'`n'|String|Integer} [Options]  
+FileAppend(Text [,Filename:=unset, Options:='']) => EmptyString
+
+ * @param {'CP0'|'UTF-8'|'UTF-8-RAW'|'UTF-16'|'UTF-16-RAW'|'CPnnn'|'RAW'|'`n'|String|Integer} [Encoding]  
+FileEncoding(Encoding) => String
+
+ * @param {'B'|'K'|'M'} [Units]  
+FileGetSize([Filename:=unset, Units:='B']) => Integer
+
+ * @param {'A'|'C'|'M'} [TimeType]  
+FileGetTime([Filename:=unset, TimeType:='M']) => String
+
+ * @param {'*'|'**'|String} Filename  
+ * @param {'r'|'w'|'a'|'rw'|'h'|'rwd'|'`n'|'`r'} Flags  
+ * @param {'CP0'|'UTF-8'|'UTF-8-RAW'|'UTF-16'|'UTF-16-RAW'|'CPnnn'|'RAW'|'`n'|String|Integer} [Encoding]  
+FileOpen(Filename, Flags [,Encoding]) => File
+
+ * @param {'CP0'|'UTF-8'|'UTF-8-RAW'|'UTF-16'|'UTF-16-RAW'|'CPnnn'|'RAW'|'`n'|String|Integer} [Options]  
+FileRead(Filename [,Options]) => String | Object
+
+ * @param {String|'D'|'M'|'S'} [Options]  
+FileSelect([Options:=0, RootOrFilename:=A_WorkingDir, Title:=unset, Filter:='']) => String | Array
+
+ * @param {String|'R'|'A'|'S'|'H'|'N'|'O'|'T'} Attributes  
+ * @param {String|'F'|'D'|'R'} [Mode]
+FileSetAttrib(Attributes [,FilePattern:=unset, Mode:='F']) => EmptyString
+
+ * @param {'M'|'C'|'A'} [TimeType]  
+ * @param {String|'F'|'D'|'R'} [Mode]
+FileSetTime([DateTimeStamp:=A_Now, FilePattern:=unset, TimeType:='M', Mode:='F']) => EmptyString
+
+ * @param {'{:}'|String} FormStr  
+Format(FormStr [,Values*]) => String
+
+ * @param {String|'R'|'L'|'D'|'T'} [DateTimeStamp]  
+ * @param {String|'d'|'dd'|'ddd'|'dddd'|'M'|'MM'|'MMM'|'MMMM'|'y'|'yy'|'yyyy'|'gg'|'h'|'hh'|'H'|'HH'|'m'|'mm'|'s'|'ss'|'t'|'tt'|'Time'|'ShortDate'|'LongDate'|'YearMonth'|'YDay'|'YDay0'|'WDay'|'YWeek'|String} [Form]  
+FormatTime([DateTimeStamp:=A_Now, Form:=unset]) => String
+
+ * @param {'Alt'|'AppsKey'|'Backspace'|'Browser_Back'|'Browser_Favorites'|'Browser_Forward'|'Browser_Home'|'Browser_Refresh'|'Browser_Search'|'Browser_Stop'|'CapsLock'|'Control'|'CtrlBreak'|'Delete'|'Down'|'End'|'Enter'|'Escape'|'F1'|'F10'|'F11'|'F12'|'F13'|'F14'|'F15'|'F16'|'F17'|'F18'|'F19'|'F2'|'F20'|'F21'|'F22'|'F23'|'F24'|'F3'|'F4'|'F5'|'F6'|'F7'|'F8'|'F9'|'Help'|'Home'|'Insert'|'LAlt'|'Launch_App1'|'Launch_App2'|'Launch_Mail'|'Launch_Media'|'LButton'|'LControl'|'Left'|'LShift'|'LWin'|'MButton'|'Media_Next'|'Media_Play_Pause'|'Media_Prev'|'Media_Stop'|'NumLock'|'Numpad0'|'Numpad1'|'Numpad2'|'Numpad3'|'Numpad4'|'Numpad5'|'Numpad6'|'Numpad7'|'Numpad8'|'Numpad9'|'NumpadAdd'|'NumpadClear'|'NumpadDel'|'NumpadDiv'|'NumpadDot'|'NumpadDown'|'NumpadEnd'|'NumpadEnter'|'NumpadHome'|'NumpadIns'|'NumpadLeft'|'NumpadMult'|'NumpadPgDn'|'NumpadPgUp'|'NumpadRight'|'NumpadSub'|'NumpadUp'|'Pause'|'PgDn'|'PgUp'|'PrintScreen'|'RAlt'|'RButton'|'RControl'|'Right'|'RShift'|'RWin	'|'SC###'|'ScrollLock'|'Shift'|'Sleep'|'Space'|'Tab'|'Up'|'VK##'|'Volume_Down'|'Volume_Mute'|'Volume_Up'|'WheelDown'|'WheelLeft'|'WheelRight'|'WheelUp'|'XButton1'|'XButton2'} KeyName  
+GetKeyName(KeyName) => String
+
+ * @param {'Alt'|'AppsKey'|'Backspace'|'Browser_Back'|'Browser_Favorites'|'Browser_Forward'|'Browser_Home'|'Browser_Refresh'|'Browser_Search'|'Browser_Stop'|'CapsLock'|'Control'|'CtrlBreak'|'Delete'|'Down'|'End'|'Enter'|'Escape'|'F1'|'F10'|'F11'|'F12'|'F13'|'F14'|'F15'|'F16'|'F17'|'F18'|'F19'|'F2'|'F20'|'F21'|'F22'|'F23'|'F24'|'F3'|'F4'|'F5'|'F6'|'F7'|'F8'|'F9'|'Help'|'Home'|'Insert'|'LAlt'|'Launch_App1'|'Launch_App2'|'Launch_Mail'|'Launch_Media'|'LButton'|'LControl'|'Left'|'LShift'|'LWin'|'MButton'|'Media_Next'|'Media_Play_Pause'|'Media_Prev'|'Media_Stop'|'NumLock'|'Numpad0'|'Numpad1'|'Numpad2'|'Numpad3'|'Numpad4'|'Numpad5'|'Numpad6'|'Numpad7'|'Numpad8'|'Numpad9'|'NumpadAdd'|'NumpadClear'|'NumpadDel'|'NumpadDiv'|'NumpadDot'|'NumpadDown'|'NumpadEnd'|'NumpadEnter'|'NumpadHome'|'NumpadIns'|'NumpadLeft'|'NumpadMult'|'NumpadPgDn'|'NumpadPgUp'|'NumpadRight'|'NumpadSub'|'NumpadUp'|'Pause'|'PgDn'|'PgUp'|'PrintScreen'|'RAlt'|'RButton'|'RControl'|'Right'|'RShift'|'RWin	'|'SC###'|'ScrollLock'|'Shift'|'Sleep'|'Space'|'Tab'|'Up'|'VK##'|'Volume_Down'|'Volume_Mute'|'Volume_Up'|'WheelDown'|'WheelLeft'|'WheelRight'|'WheelUp'|'XButton1'|'XButton2'} KeyName  
+GetKeyVK(KeyName) => Integer
+
+ * @param {'Alt'|'AppsKey'|'Backspace'|'Browser_Back'|'Browser_Favorites'|'Browser_Forward'|'Browser_Home'|'Browser_Refresh'|'Browser_Search'|'Browser_Stop'|'CapsLock'|'Control'|'CtrlBreak'|'Delete'|'Down'|'End'|'Enter'|'Escape'|'F1'|'F10'|'F11'|'F12'|'F13'|'F14'|'F15'|'F16'|'F17'|'F18'|'F19'|'F2'|'F20'|'F21'|'F22'|'F23'|'F24'|'F3'|'F4'|'F5'|'F6'|'F7'|'F8'|'F9'|'Help'|'Home'|'Insert'|'LAlt'|'Launch_App1'|'Launch_App2'|'Launch_Mail'|'Launch_Media'|'LButton'|'LControl'|'Left'|'LShift'|'LWin'|'MButton'|'Media_Next'|'Media_Play_Pause'|'Media_Prev'|'Media_Stop'|'NumLock'|'Numpad0'|'Numpad1'|'Numpad2'|'Numpad3'|'Numpad4'|'Numpad5'|'Numpad6'|'Numpad7'|'Numpad8'|'Numpad9'|'NumpadAdd'|'NumpadClear'|'NumpadDel'|'NumpadDiv'|'NumpadDot'|'NumpadDown'|'NumpadEnd'|'NumpadEnter'|'NumpadHome'|'NumpadIns'|'NumpadLeft'|'NumpadMult'|'NumpadPgDn'|'NumpadPgUp'|'NumpadRight'|'NumpadSub'|'NumpadUp'|'Pause'|'PgDn'|'PgUp'|'PrintScreen'|'RAlt'|'RButton'|'RControl'|'Right'|'RShift'|'RWin	'|'SC###'|'ScrollLock'|'Shift'|'Sleep'|'Space'|'Tab'|'Up'|'VK##'|'Volume_Down'|'Volume_Mute'|'Volume_Up'|'WheelDown'|'WheelLeft'|'WheelRight'|'WheelUp'|'XButton1'|'XButton2'} KeyName  
+GetKeySC(KeyName) => Integer
+
+ * @param {'Alt'|'AppsKey'|'Backspace'|'Browser_Back'|'Browser_Favorites'|'Browser_Forward'|'Browser_Home'|'Browser_Refresh'|'Browser_Search'|'Browser_Stop'|'CapsLock'|'Control'|'CtrlBreak'|'Delete'|'Down'|'End'|'Enter'|'Escape'|'F1'|'F10'|'F11'|'F12'|'F13'|'F14'|'F15'|'F16'|'F17'|'F18'|'F19'|'F2'|'F20'|'F21'|'F22'|'F23'|'F24'|'F3'|'F4'|'F5'|'F6'|'F7'|'F8'|'F9'|'Help'|'Home'|'Insert'|'LAlt'|'Launch_App1'|'Launch_App2'|'Launch_Mail'|'Launch_Media'|'LButton'|'LControl'|'Left'|'LShift'|'LWin'|'MButton'|'Media_Next'|'Media_Play_Pause'|'Media_Prev'|'Media_Stop'|'NumLock'|'Numpad0'|'Numpad1'|'Numpad2'|'Numpad3'|'Numpad4'|'Numpad5'|'Numpad6'|'Numpad7'|'Numpad8'|'Numpad9'|'NumpadAdd'|'NumpadClear'|'NumpadDel'|'NumpadDiv'|'NumpadDot'|'NumpadDown'|'NumpadEnd'|'NumpadEnter'|'NumpadHome'|'NumpadIns'|'NumpadLeft'|'NumpadMult'|'NumpadPgDn'|'NumpadPgUp'|'NumpadRight'|'NumpadSub'|'NumpadUp'|'Pause'|'PgDn'|'PgUp'|'PrintScreen'|'RAlt'|'RButton'|'RControl'|'Right'|'RShift'|'RWin	'|'SC###'|'ScrollLock'|'Shift'|'Sleep'|'Space'|'Tab'|'Up'|'VK##'|'Volume_Down'|'Volume_Mute'|'Volume_Up'|'WheelDown'|'WheelLeft'|'WheelRight'|'WheelUp'|'XButton1'|'XButton2'} KeyName  
+ * @param {'P'|'T'} [Mode]  
+GetKeyState(KeyName [,Mode]) => String
+
+ * @param {'R'} [Mode]  
+GroupActivate(GroupName [,Mode:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+GroupAdd(GroupName [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'R'|'A'} [Mode]  
+GroupClose(GroupName [,Mode:='']) => EmptyString
+
+ * @param {'R'} [Mode]  
+GroupDeactivate(GroupName [,Mode:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+HotIfWinActive([WinTitle:='', WinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]    
+HotIfWinExist([WinTitle:='', WinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]    
+HotIfWinNotActive([WinTitle:='', WinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]    
+HotIfWinNotExist([WinTitle:='', WinText:='']) => EmptyString
+
+ * @param {'On'|'Off'|'Toggle'|'AltTab'|'ShiftAltTab'|'AltTabMenu'|'AltTabeAndMenu'|'AltTabMenuDismiss'} [Action]  
+ * @param {String|'On'|'Off'|'B'|'P'|'S'|'T'|'I'} [Options]  
+Hotkey(KeyName [,Action, Options]) => EmptyString
+
+ * @param {String|'*'|'?'|'B'|'C'|'K'|'O'|'P'|'S'|'SI'|'SE'|'SP'|'T'|'R'|'X'|'Z'|'EndChards'|'MouseReset'|'Reset'} Option  
+Hotstring(Option [,Value, Enabled]) => String | Integer
+
+ * @param {String|'Icon'|'*'|'*Trans'|'*W'|'*H'} ImageFile  
+ImageSearch(&OutputVarX, &OutputVarY, X1, Y1, X2, Y2, ImageFile) => Integer
+
+ * @param {String|'X'|'Y'|'W'|'H'|'T'|'Password'} [Options]  
+InputBox([Prompt:='', Title:=A_ScriptName, Options:='', DefaultText:='']) => $InputBoxObject
+
+ * @param {'On'|'Off'|'Locale'|Integer} [CaseSense]  
+InStr(Haystack, Needle [,CaseSense:=0, StartPos:=1, Occurrence:=1]) => Integer
+
+ * @param {'Locale'} [Locale]  
+IsAlnum(Value [,Locale:=unset]) => Integer
+
+ * @param {'Locale'} [Locale]  
+IsAlpha(Value [,Locale:=unset]) => Integer
+
+ * @param {'Locale'} [Locale]  
+IsLower(Value [,Locale:=unset]) => Integer
+
+ * @param {'Locale'} [Locale]  
+IsUpper(Value [,Locale:=unset]) => Integer
+
+ * @param {String|'D'|'L'|'T'} [Options]  
+KeyWait(KeyName [,Options]) => Integer
+
+ * @param {String|'Selected'|'Focused'|'Col'|'Count'|'Count Selected'|'Count Focused'|'Count Col'} [Options]  
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+ListViewGetContent([Options:='', Control:=unset, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String | Integer
+
+ * @param {String|'W'|'H'|'Icon'|'GDI+'} [Options]  
+LoadPicture(Filename [,Options, &OutImageType]) => Integer
+
+ * @param {'`n'|'`r'|'`r`n'|'`t'|' '|'`n`r`t '|String} [OmitChars]  
+LTrim(Str [,OmitChars:=' `t']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+MenuSelect(WinTitle, WinText, MenuName [,SubMenuN:=unset, NoWinTitle:='', NoWinText:='', *]) => EmptyString
+
+ * @param {'Left'|'Right'|'Middle'|'X1'|'X2'|'WheelUp'|'WheelDown'|'WheelRight'|'WheelLeft'} [Button]  
+ * @param {'D'|'U'} [State]  
+ * @param {'R'} [Relative]  
+MouseClick([Button:='L', X:=CurrentX, Y:=CurrentY, Count:=1, Speed:=2, State:=unset, Relative:=unset]) => EmptyString
+
+ * @param {'Left'|'Right'|'Middle'|'X1'|'X2'|'WheelUp'|'WheelDown'|'WheelRight'|'WheelLeft'} [Button]  
+ * @param {'R'} [Relative]  
+MouseClickDrag(Button, StartX, StartY, EndX, EndY [,Speed:=2, Relative:=unset]) => EmptyString
+
+ * @param {'R'} [Relative]  
+MouseMove(X, Y [,Speed, Relative]) => EmptyString
+
+ * @param {String|'Owner'|'T'|'OK'|'OKCancel'|'AbortRetryIgnore'|'YesNoCancel'|'YesNo'|'RetryCancel'|'CancelTryAgainContinue'|'IconX'|'Icon?'|'Icon!'|'Iconi'|'Default2'|'Default3'|'Default4'} [MBOptions]  
+MsgBox([Text:='', Title:=A_ScriptName, MBOptions:=0]) => String
+
+ * @param {'Char'|'Short'|'Int'|'Int64'|'Ptr'|'UChar'|'UShort'|'UInt'|'UPtr'|'UInt64'|'Float'|'Double'|Integer} Offset_Or_DataType  
+ * @param {'Char'|'Short'|'Int'|'Int64'|'Ptr'|'UChar'|'UShort'|'UInt'|'UPtr'|'UInt64'|'Float'|'Double'|Integer} [DataType]  
+NumGet(Source, Offset_Or_DataType [,DataType:=unset]) => Number
+
+ * @param {'Char'|'Short'|'Int'|'Int64'|'Ptr'|'UChar'|'UShort'|'UInt'|'UPtr'|'UInt64'|'Float'|'Double'|Integer} DataTypeN  
+NumPut(DataTypeN, NumN, Target [,Offset:=0], *) => Integer
+
+ * @param {'Alt'|'Slow'} [Mode]  
+PixelGetColor(X, Y [,Mode]) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+PostMessage(MsgNumber [,wParam:=0, lParam:=0, Control:=TargetWindow, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'L'|'B'|'N'|'A'|'H'|'R'} Level  
+ProcessSetPriority(Level [,PIDOrName]) => Integer
+
+ * @param {'HKEY_CLASSES_ROOT'|'HKEY_CURRENT_USER'|'HKEY_LOCAL_MACHINE'|'HKEY_USERS'|'HKEY_CURRENT_CONFIG'|'HKCR'|'HKCU'|'HKLM'|'HKU'|'HKCC'} [KeyName]  
+RegCreateKey([KeyName]) => EmptyString
+
+ * @param {'HKEY_CLASSES_ROOT'|'HKEY_CURRENT_USER'|'HKEY_LOCAL_MACHINE'|'HKEY_USERS'|'HKEY_CURRENT_CONFIG'|'HKCR'|'HKCU'|'HKLM'|'HKU'|'HKCC'} [KeyName]  
+RegDelete([KeyName, K]) => EmptyString
+
+ * @param {'HKEY_CLASSES_ROOT'|'HKEY_CURRENT_USER'|'HKEY_LOCAL_MACHINE'|'HKEY_USERS'|'HKEY_CURRENT_CONFIG'|'HKCR'|'HKCU'|'HKLM'|'HKU'|'HKCC'} [KeyName]  
+RegDeleteKey([KeyName]) => EmptyString
+
+ * @param {'HKEY_CLASSES_ROOT'|'HKEY_CURRENT_USER'|'HKEY_LOCAL_MACHINE'|'HKEY_USERS'|'HKEY_CURRENT_CONFIG'|'HKCR'|'HKCU'|'HKLM'|'HKU'|'HKCC'} [KeyName]  
+RegRead([KeyName, ValueName, Default]) => Primitive
+
+ * @param {'REG_SZ'|'REG_DWORD'|'REG_BINARY'|'REG_EXPAND_SZ'|'REG_MULTI_SZ'} [ValueType]  
+ * @param {'HKEY_CLASSES_ROOT'|'HKEY_CURRENT_USER'|'HKEY_LOCAL_MACHINE'|'HKEY_USERS'|'HKEY_CURRENT_CONFIG'|'HKCR'|'HKCU'|'HKLM'|'HKU'|'HKCC'} [KeyName]  
+RegWrite(Value [,ValueType, KeyName, ValueName]) => EmptyString
+
+ * @param {'`n'|'`r'|'`r`n'|'`t'|' '|'`n`r`t '|String} [OmitChars]  
+RTrim(Str [,OmitChars:=' `t']) => String
+
+ * @param {'Max'|'Min'|'Hide'} [LaunchOpt]  
+Run(Target [,WorkingDir:=A_WorkingDir, LaunchOpt:='', &OutputPID]) => EmptyString
+
+ * @param {'Max'|'Min'|'Hide'} [LaunchOpt]  
+RunWait(Target [,WorkingDir:=A_WorkingDir, LaunchOpt:='', &OutputPID]) => Integer
+
+ * @param {String|'{Raw}'|'{Text}'|'{Blind}'|'{!}'|'{#}'|'{+}'|'{^}'|'{{}'|'{}}'|'{Alt}'|'{AppsKey}'|'{Backspace}'|'{Browser_Back}'|'{Browser_Favorites}'|'{Browser_Forward}'|'{Browser_Home}'|'{Browser_Refresh}'|'{Browser_Search}'|'{Browser_Stop}'|'{CapsLock}'|'{Click}'|'{Control}'|'{Ctrl}'|'{CtrlBreak}'|'{Delete}'|'{Down}'|'{End}'|'{Enter}'|'{Escape}'|'{F1}'|'{F10}'|'{F11}'|'{F12}'|'{F13}'|'{F14}'|'{F15}'|'{F16}'|'{F17}'|'{F18}'|'{F19}'|'{F2}'|'{F20}'|'{F21}'|'{F22}'|'{F23}'|'{F24}'|'{F3}'|'{F4}'|'{F5}'|'{F6}'|'{F7}'|'{F8}'|'{F9}'|'{Help}'|'{Home}'|'{Insert}'|'{LAlt}'|'{Launch_App1}'|'{Launch_App2}'|'{Launch_Mail}'|'{Launch_Media}'|'{LButton}'|'{LControl}'|'{LCtrl}'|'{Left}'|'{LShift}'|'{LWin}'|'{MButton}'|'{Media_Next}'|'{Media_Play_Pause}'|'{Media_Prev}'|'{Media_Stop}'|'{NumLock}'|'{Numpad0}'|'{Numpad1}'|'{Numpad2}'|'{Numpad3}'|'{Numpad4}'|'{Numpad5}'|'{Numpad6}'|'{Numpad7}'|'{Numpad8}'|'{Numpad9}'|'{NumpadAdd}'|'{NumpadClear}'|'{NumpadDel}'|'{NumpadDiv}'|'{NumpadDot}'|'{NumpadDown}'|'{NumpadEnd}'|'{NumpadEnter}'|'{NumpadHome}'|'{NumpadIns}'|'{NumpadLeft}'|'{NumpadMult}'|'{NumpadPgDn}'|'{NumpadPgUp}'|'{NumpadRight}'|'{NumpadSub}'|'{NumpadUp}'|'{Pause}'|'{PgDn}'|'{PgUp}'|'{PrintScreen}'|'{RAlt}'|'{RButton}'|'{RControl}'|'{RCtrl}'|'{Right}'|'{RShift}'|'{RWin	}'|'{SC###}'|'{ScrollLock}'|'{Shift}'|'{Sleep}'|'{Space}'|'{Tab}'|'{U+####}'|'{ASC+####}'|'{Up}'|'{VK##}'|'{VK##SC###}'|'{Volume_Down}'|'{Volume_Mute}'|'{Volume_Up}'|'{WheelDown}'|'{WheelLeft}'|'{WheelRight}'|'{WheelUp}'|'{XButton1}'|'{XButton2}'} SendKeys  
+Send(SendKeys) => EmptyString
+
+ * @param {String|'{Raw}'|'{Text}'|'{Blind}'|'{!}'|'{#}'|'{+}'|'{^}'|'{{}'|'{}}'|'{Alt}'|'{AppsKey}'|'{Backspace}'|'{Browser_Back}'|'{Browser_Favorites}'|'{Browser_Forward}'|'{Browser_Home}'|'{Browser_Refresh}'|'{Browser_Search}'|'{Browser_Stop}'|'{CapsLock}'|'{Click}'|'{Control}'|'{Ctrl}'|'{CtrlBreak}'|'{Delete}'|'{Down}'|'{End}'|'{Enter}'|'{Escape}'|'{F1}'|'{F10}'|'{F11}'|'{F12}'|'{F13}'|'{F14}'|'{F15}'|'{F16}'|'{F17}'|'{F18}'|'{F19}'|'{F2}'|'{F20}'|'{F21}'|'{F22}'|'{F23}'|'{F24}'|'{F3}'|'{F4}'|'{F5}'|'{F6}'|'{F7}'|'{F8}'|'{F9}'|'{Help}'|'{Home}'|'{Insert}'|'{LAlt}'|'{Launch_App1}'|'{Launch_App2}'|'{Launch_Mail}'|'{Launch_Media}'|'{LButton}'|'{LControl}'|'{LCtrl}'|'{Left}'|'{LShift}'|'{LWin}'|'{MButton}'|'{Media_Next}'|'{Media_Play_Pause}'|'{Media_Prev}'|'{Media_Stop}'|'{NumLock}'|'{Numpad0}'|'{Numpad1}'|'{Numpad2}'|'{Numpad3}'|'{Numpad4}'|'{Numpad5}'|'{Numpad6}'|'{Numpad7}'|'{Numpad8}'|'{Numpad9}'|'{NumpadAdd}'|'{NumpadClear}'|'{NumpadDel}'|'{NumpadDiv}'|'{NumpadDot}'|'{NumpadDown}'|'{NumpadEnd}'|'{NumpadEnter}'|'{NumpadHome}'|'{NumpadIns}'|'{NumpadLeft}'|'{NumpadMult}'|'{NumpadPgDn}'|'{NumpadPgUp}'|'{NumpadRight}'|'{NumpadSub}'|'{NumpadUp}'|'{Pause}'|'{PgDn}'|'{PgUp}'|'{PrintScreen}'|'{RAlt}'|'{RButton}'|'{RControl}'|'{RCtrl}'|'{Right}'|'{RShift}'|'{RWin	}'|'{SC###}'|'{ScrollLock}'|'{Shift}'|'{Sleep}'|'{Space}'|'{Tab}'|'{U+####}'|'{ASC+####}'|'{Up}'|'{VK##}'|'{VK##SC###}'|'{Volume_Down}'|'{Volume_Mute}'|'{Volume_Up}'|'{WheelDown}'|'{WheelLeft}'|'{WheelRight}'|'{WheelUp}'|'{XButton1}'|'{XButton2}'} SendKeys  
+SendEvent(SendKeys) => EmptyString
+
+ * @param {String|'{Raw}'|'{Text}'|'{Blind}'|'{!}'|'{#}'|'{+}'|'{^}'|'{{}'|'{}}'|'{Alt}'|'{AppsKey}'|'{Backspace}'|'{Browser_Back}'|'{Browser_Favorites}'|'{Browser_Forward}'|'{Browser_Home}'|'{Browser_Refresh}'|'{Browser_Search}'|'{Browser_Stop}'|'{CapsLock}'|'{Click}'|'{Control}'|'{Ctrl}'|'{CtrlBreak}'|'{Delete}'|'{Down}'|'{End}'|'{Enter}'|'{Escape}'|'{F1}'|'{F10}'|'{F11}'|'{F12}'|'{F13}'|'{F14}'|'{F15}'|'{F16}'|'{F17}'|'{F18}'|'{F19}'|'{F2}'|'{F20}'|'{F21}'|'{F22}'|'{F23}'|'{F24}'|'{F3}'|'{F4}'|'{F5}'|'{F6}'|'{F7}'|'{F8}'|'{F9}'|'{Help}'|'{Home}'|'{Insert}'|'{LAlt}'|'{Launch_App1}'|'{Launch_App2}'|'{Launch_Mail}'|'{Launch_Media}'|'{LButton}'|'{LControl}'|'{LCtrl}'|'{Left}'|'{LShift}'|'{LWin}'|'{MButton}'|'{Media_Next}'|'{Media_Play_Pause}'|'{Media_Prev}'|'{Media_Stop}'|'{NumLock}'|'{Numpad0}'|'{Numpad1}'|'{Numpad2}'|'{Numpad3}'|'{Numpad4}'|'{Numpad5}'|'{Numpad6}'|'{Numpad7}'|'{Numpad8}'|'{Numpad9}'|'{NumpadAdd}'|'{NumpadClear}'|'{NumpadDel}'|'{NumpadDiv}'|'{NumpadDot}'|'{NumpadDown}'|'{NumpadEnd}'|'{NumpadEnter}'|'{NumpadHome}'|'{NumpadIns}'|'{NumpadLeft}'|'{NumpadMult}'|'{NumpadPgDn}'|'{NumpadPgUp}'|'{NumpadRight}'|'{NumpadSub}'|'{NumpadUp}'|'{Pause}'|'{PgDn}'|'{PgUp}'|'{PrintScreen}'|'{RAlt}'|'{RButton}'|'{RControl}'|'{RCtrl}'|'{Right}'|'{RShift}'|'{RWin	}'|'{SC###}'|'{ScrollLock}'|'{Shift}'|'{Sleep}'|'{Space}'|'{Tab}'|'{U+####}'|'{ASC+####}'|'{Up}'|'{VK##}'|'{VK##SC###}'|'{Volume_Down}'|'{Volume_Mute}'|'{Volume_Up}'|'{WheelDown}'|'{WheelLeft}'|'{WheelRight}'|'{WheelUp}'|'{XButton1}'|'{XButton2}'} SendKeys  
+SendInput(SendKeys) => EmptyString
+
+ * @param {String|'{Raw}'|'{Text}'|'{Blind}'|'{!}'|'{#}'|'{+}'|'{^}'|'{{}'|'{}}'|'{Alt}'|'{AppsKey}'|'{Backspace}'|'{Browser_Back}'|'{Browser_Favorites}'|'{Browser_Forward}'|'{Browser_Home}'|'{Browser_Refresh}'|'{Browser_Search}'|'{Browser_Stop}'|'{CapsLock}'|'{Click}'|'{Control}'|'{Ctrl}'|'{CtrlBreak}'|'{Delete}'|'{Down}'|'{End}'|'{Enter}'|'{Escape}'|'{F1}'|'{F10}'|'{F11}'|'{F12}'|'{F13}'|'{F14}'|'{F15}'|'{F16}'|'{F17}'|'{F18}'|'{F19}'|'{F2}'|'{F20}'|'{F21}'|'{F22}'|'{F23}'|'{F24}'|'{F3}'|'{F4}'|'{F5}'|'{F6}'|'{F7}'|'{F8}'|'{F9}'|'{Help}'|'{Home}'|'{Insert}'|'{LAlt}'|'{Launch_App1}'|'{Launch_App2}'|'{Launch_Mail}'|'{Launch_Media}'|'{LButton}'|'{LControl}'|'{LCtrl}'|'{Left}'|'{LShift}'|'{LWin}'|'{MButton}'|'{Media_Next}'|'{Media_Play_Pause}'|'{Media_Prev}'|'{Media_Stop}'|'{NumLock}'|'{Numpad0}'|'{Numpad1}'|'{Numpad2}'|'{Numpad3}'|'{Numpad4}'|'{Numpad5}'|'{Numpad6}'|'{Numpad7}'|'{Numpad8}'|'{Numpad9}'|'{NumpadAdd}'|'{NumpadClear}'|'{NumpadDel}'|'{NumpadDiv}'|'{NumpadDot}'|'{NumpadDown}'|'{NumpadEnd}'|'{NumpadEnter}'|'{NumpadHome}'|'{NumpadIns}'|'{NumpadLeft}'|'{NumpadMult}'|'{NumpadPgDn}'|'{NumpadPgUp}'|'{NumpadRight}'|'{NumpadSub}'|'{NumpadUp}'|'{Pause}'|'{PgDn}'|'{PgUp}'|'{PrintScreen}'|'{RAlt}'|'{RButton}'|'{RControl}'|'{RCtrl}'|'{Right}'|'{RShift}'|'{RWin	}'|'{SC###}'|'{ScrollLock}'|'{Shift}'|'{Sleep}'|'{Space}'|'{Tab}'|'{U+####}'|'{ASC+####}'|'{Up}'|'{VK##}'|'{VK##SC###}'|'{Volume_Down}'|'{Volume_Mute}'|'{Volume_Up}'|'{WheelDown}'|'{WheelLeft}'|'{WheelRight}'|'{WheelUp}'|'{XButton1}'|'{XButton2}'} SendKeys  
+SendPlay(SendKeys) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+SendMessage(MsgNumber [,wParam:=0, lParam:=0, Control:=TargetWindow, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='', Timeout:=5000]) => EmptyString
+
+ * @param {'Event'|'Input'|'Play'|'InputThenPlay'} Mode
+SendMode(Mode) => String
+
+ * @param {'On'|'Off'|'AlwaysOn'|'AlwaysOff'} [State]  
+SetCapsLockState([State]) => EmptyString
+
+ * @param {'Play'} [Play]
+SetKeyDelay([KeyDelay:=unset, HoldTime:=unset, Play:='']) => EmptyString
+
+ * @param {'Play'} [Play]
+SetMouseDelay(Delay [,Play]) => Integer
+
+ * @param {'On'|'Off'|'AlwaysOn'|'AlwaysOff'|Integer} [State]  
+SetNumLockState([State]) => EmptyString
+
+ * @param {'On'|'Off'|'AlwaysOn'|'AlwaysOff'|Integer} [State]  
+SetScrollLockState([State]) => EmptyString
+
+ * @param {'Deafult'|Integer} RegView  
+SetRegView(RegView) => String
+
+ * @param {'1'|'2'|'3'|'RegEx'|'Fast'|'Slow'|Integer} ModeOrSpeed  
+SetTitleMatchMode(ModeOrSpeed) => String
+
+ * @param {String|'C'|'CL'|'CLogical'|'D'|'N'|'P'|'R'|'Random'|'U'|'Z'|'\:'} [Options]  
+Sort(Text [,Options:='C0', Callback:=unset]) => String
+
+ * @param {'*-1'|'*16'|'*32'|'*48'|'*64'|String} Filename  
+ * @param {'1'|'0'|'Wait'} [Wait]
+SoundPlay(Filename [,Wait:=0]) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+StatusBarGetText([Section:=1, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+StatusBarWait([BarText:='', Timeout:=unset, Section:=1, WinTitle:='', WinText:='', Interval:=50, NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'On'|'Off'|'Locale'|'Logical'|'A2'|'1'|'0'|Integer} [CaseSense]
+StrCompare(String1, String2 [,CaseSense]) => Integer
+
+ * @param {'CP0'|'UTF-8'|'UTF-8-RAW'|'UTF-16'|'UTF-16-RAW'|'CPnnn'|'RAW'|'`n'|String|Integer} [Encoding]  
+StrGet(Source [,Length:=unset, Encoding:=unset]) => String
+
+ * @param {'CP0'|'UTF-8'|'UTF-8-RAW'|'UTF-16'|'UTF-16-RAW'|'CPnnn'|'RAW'|'`n'|String|Integer} [Encoding]  
+StrPut(Str [,Target, Length, Encoding]) => Integer
+
+ * @param {'On'|'Off'|'Locale'|'1'|'0'} [CaseSense]  
+StrReplace(Haystack, Needle [,ReplaceText:='', CaseSense:=0, &OutputVarCount, Limit:=-1]) => String
+
+ * @param {'NoTimers'|'Priority'|'Interrupt'} Option  
+Thread(Option [,NewSetting, LineCount]) => EmptyString
+
+ * @param {String|'IconI'|'Icon!'|'IconX'|'Mute'|String|Integer} [Options]  
+TrayTip([Text:='', Title:='', Options:=0]) => EmptyString
+
+ * @param {'`n'|'`r'|'`r`n'|'`t'|' '|'`n`r`t '|String} [OmitChars]  
+Trim(Str [,OmitChars:=' `t']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinActivate([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinActivateBottom([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinActive([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinClose([WinTitle:='', WinText:='', SecToWait:=unset, NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinExist([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetClass([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetClientPos([&OutX, &OutY, &OutWidth, &OutHeight, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetControls([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Array
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetControlsHwnd([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Array
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetCount([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetID([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetIDLast([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetList([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Array
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetMinMax([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetPID([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetPos([&OutX, &OutY, &OutWidth, &OutHeight, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetProcessName([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetProcessPath([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetStyle([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetExStyle([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetText([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetTitle([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetTransColor([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => String
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinGetTransparent([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinHide([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinKill([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinMaximize([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinMinimize([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinMove([X, Y, Width, Height, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinMoveBottom([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinMoveTop([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinRedraw([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinRestore([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetAlwaysOnTop([NewSetting:=1, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetEnabled([NewSetting:=1, WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {String|'W'|'H'|'X-Y'|'E'|'R'|'Polygons'|'Wind'} [Options]  
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetRegion([Options:='', WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetStyle(Value [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetExStyle(Value [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetTitle(NewTitle [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetTransColor(Color [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinSetTransparent(NewSetting [,WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinShow([WinTitle:='', WinText:='', NoWinTitle:='', NoWinText:='']) => EmptyString
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinWait([WinTitle:='', WinText:='', Timeout:=unset, NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinWaitActive([WinTitle:='', WinText:='', Timeout:=unset, NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinWaitNotActive([WinTitle:='', WinText:='', Timeout:=unset, NoWinTitle:='', NoWinText:='']) => Integer
+
+ * @param {'ahk_exe '|'ahk_class '|'ahk_id '|'ahk_pid '|'ahk_group '} [WinTitle]  
+WinWaitClose([WinTitle:='', WinText:='', Timeout:=unset, NoWinTitle:='', NoWinText:='']) => Integer
